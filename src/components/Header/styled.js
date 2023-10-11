@@ -21,7 +21,6 @@ export const Navigation = styled.div`
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-  text-transform: uppercase;
   margin-right: 784px;
 `;
 
@@ -30,4 +29,11 @@ export const StyledLogo = styled(Logo)`
   width: 239px;
   height: 29px;
   flex-shrink: 0;
+`;
+
+export const NavButtons = styled.button`
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
 `;

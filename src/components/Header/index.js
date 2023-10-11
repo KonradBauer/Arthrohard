@@ -1,13 +1,13 @@
-import { Content, Navigation, StyledLogo } from "./styled";
+import { Content, NavButtons, Navigation, StyledLogo } from "./styled";
 
 export const Header = () => {
   return (
     <Content>
       <StyledLogo />
       <Navigation>
-        <div>Co nas wyróżnia</div>
-        <div>Skład</div>
-        <div>Produkty</div>
+        <NavButtons>Co nas wyróżnia</NavButtons>
+        <NavButtons>Skład</NavButtons>
+        <NavButtons>Produkty</NavButtons>
       </Navigation>
     </Content>
   );
