@@ -8,7 +8,7 @@ export const GetProducts = () => {
 
   if (data) {
     return (
-      <ProductsContainer>
+      <ProductsContainer id="products">
         {data.data.map((product) => (
           <Tile key={product.id}>ID: {product.id}</Tile>
         ))}

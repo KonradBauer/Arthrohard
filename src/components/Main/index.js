@@ -27,7 +27,7 @@ export const Main = () => {
         </ProductInfo>
       </Wrapper>
       <SectionWrapper>
-        <SubHeader>Co wyróżnia nasz preparat</SubHeader>
+        <SubHeader id="about">Co wyróżnia nasz preparat</SubHeader>
         <StyledLine />
       </SectionWrapper>
     </>

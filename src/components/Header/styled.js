@@ -34,4 +34,11 @@ export const NavButtons = styled.button`
   background: none;
   text-transform: uppercase;
   cursor: pointer;
+  color: #111;
+  font-family: Futura PT, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  text-transform: uppercase;
 `;

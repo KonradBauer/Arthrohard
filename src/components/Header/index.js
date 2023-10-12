@@ -1,3 +1,4 @@
+import React from "react";
 import { Content, NavButtons, Navigation, StyledLogo } from "./styled";
 
 export const Header = () => {
@@ -5,9 +6,9 @@ export const Header = () => {
     <Content>
       <StyledLogo />
       <Navigation>
-        <NavButtons>Co nas wyróżnia</NavButtons>
-        <NavButtons>Skład</NavButtons>
-        <NavButtons>Produkty</NavButtons>
+        <NavButtons onClick={() => (window.location.href = "#about")}>Co nas wyróżnia</NavButtons>
+        <NavButtons onClick={() => (window.location.href = "#ingredients")}>Skład</NavButtons>
+        <NavButtons onClick={() => (window.location.href = "#products")}>Produkty</NavButtons>
       </Navigation>
     </Content>
   );
