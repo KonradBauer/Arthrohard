@@ -63,6 +63,11 @@ export const BuyButton = styled.button`
   color: #f6f6f6;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const SectionWrapper = styled.div`
