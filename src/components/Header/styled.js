@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as Logo } from "../../images/Logo.svg";
 
 export const Content = styled.div`
-  max-width: 1920px;
+  max-width: 100%;
   height: 122px;
   background-color: #ffffff;
   display: flex;
@@ -16,11 +16,9 @@ export const Navigation = styled.div`
   display: flex;
   gap: 40px;
   color: #111;
-  font-family: Futura PT;
   font-size: 16px;
-  font-style: normal;
   font-weight: bold;
-  line-height: normal;
+  line-height: 16px;
   margin-right: 784px;
 `;
 
