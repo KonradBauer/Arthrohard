@@ -46,8 +46,8 @@ export const SubDescription = styled.div`
 export const ProductInfo = styled.div`
   flex-wrap: wrap;
   margin-left: 111px;
-  margin-top: 179px;
   margin-right: 244px;
+  margin-top: -50px;
 `;
 
 export const BuyButton = styled.button`
@@ -93,4 +93,6 @@ export const StyledLine = styled(Line)`
   width: 100%;
   max-width: 730px;
   margin-top: 20px;
+  stroke-width: 1px;
+  stroke: #111;
 `;
