@@ -2,17 +2,28 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+
+html {
+    box-sizing: border-box;
+    font-family: "Futura PT", sans-serif;
+  }
+
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+
   body {
-    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     transition: background-color 0.5s ease-in-out;
     background: #F6F6F6;
+    margin: 0;
+    padding: 0;
     
   }
 `;
 
 export const GlobalContainer = styled.div`
-  width: 1920px;
+  width: 100%;
   margin: auto;
 
   @media (max-width: 375px) {
