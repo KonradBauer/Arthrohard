@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../../images/Logo.svg";
 import { ReactComponent as Image } from "../../images/medicine.svg";
+import { ReactComponent as Line } from "../../images/line.svg";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -62,4 +63,34 @@ export const BuyButton = styled.button`
   color: #f6f6f6;
   border: none;
   cursor: pointer;
+`;
+
+export const SectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+`;
+
+export const SubHeader = styled.div`
+  display: flex;
+  margin-top: 153px;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  background: linear-gradient(90deg, #111 -8.85%, #b1b1b1 58.84%, #696969 91.39%, #b1b1b1 116.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+export const StyledLine = styled(Line)`
+  width: 100%;
+  max-width: 730px;
+  margin-top: 20px;
 `;
