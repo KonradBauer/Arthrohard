@@ -13,7 +13,6 @@ export const Tile = styled.div`
   align-items: center;
   width: 371px;
   height: 350px;
-  padding: 155px;
   gap: 10px;
   background: #bebebe;
   font-family: Futura PT;
