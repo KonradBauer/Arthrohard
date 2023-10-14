@@ -1,10 +1,12 @@
 import {
   BuyButton,
   Center,
-  CenterImages,
+  CenterContainer,
+  CenteredImages,
   Description,
   DescriptionHeader,
   ImageContainer,
+  Images,
   Left,
   Li,
   PrecisedDescription,
@@ -20,6 +22,11 @@ import {
   Ul,
   Wrapper,
 } from "./styled";
+
+import leftImage from "../../images/leftImage.jpg";
+import rightImage from "../../images/rightImage.jpg";
+import centerLeft from "../../images/center1.jpg";
+import centerRight from "../../images/center2.jpg";
 
 export const Main = () => {
   return (
@@ -70,17 +77,21 @@ export const Main = () => {
             Skuteczność - skoncentrowana dawka
             <StyledLine />
             <PrecisedDescription>
-              Tylko jedna porcja dziennie. To nie tylko wygoda, ale również gwarancja, że Twoje
-              zwierzę otrzymuje wszystko, czego potrzebuje, aby cieszyć się zdrowiem i aktywnością
-              na długo. Skorzystaj z zalet Arthrohard i zobacz różnicę w komforcie życia swojego
-              zwierzęcia.
+              <strong>Tylko jedna porcja dziennie.</strong>
+              <br /> To nie tylko wygoda, ale również gwarancja, że Twoje zwierzę otrzymuje
+              wszystko, czego potrzebuje, aby cieszyć się zdrowiem i aktywnością na długo.
+              Skorzystaj z zalet Arthrohard i zobacz różnicę w komforcie życia swojego zwierzęcia.
             </PrecisedDescription>
           </DescriptionHeader>
         </Right>
       </ProductDescription>
       <ImageContainer>
-        <img src="../../images/leftImage.jpg" alt="Puppy" />
-        <CenterImages></CenterImages>
+        <Images src={leftImage} alt="special ingredient" />
+        <CenterContainer>
+          <CenteredImages src={centerLeft} alt="instruction" />
+          <CenteredImages src={centerRight} alt="instruction" />
+        </CenterContainer>
+        <Images src={rightImage} alt="dosage" />
       </ImageContainer>
     </>
   );

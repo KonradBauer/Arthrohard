@@ -172,13 +172,30 @@ export const Li = styled.li`
 `;
 
 export const ImageContainer = styled.div`
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
   gap: 206px;
-  width: 360px;
-  height: 290px;
+  width: 1492px;
 `;
 
-export const CenterImages = styled.div`
+export const CenterContainer = styled.div`
   gap: 20px;
+  display: flex;
+`;
+
+export const Images = styled.img`
+  width: 360px;
+  height: 290px;
+  border-radius: 8px;
+  object-fit: cover;
+`;
+export const CenteredImages = styled.img`
+  width: 170px;
+  height: 294px;
+  border-radius: 8px;
+  object-fit: cover;
 `;
