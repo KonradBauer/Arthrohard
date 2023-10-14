@@ -101,3 +101,84 @@ export const StyledLine = styled(Line)`
   stroke-width: 1px;
   stroke: #111;
 `;
+
+export const ProductDescription = styled.div`
+  width: 1546px;
+  gap: 200px;
+  display: flex;
+  margin-top: 135px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export const DescriptionHeader = styled.div`
+  color: #111;
+  text-align: center;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+`;
+
+export const PrecisedDescription = styled.div`
+  color: #111;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 417px;
+`;
+
+export const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 417px;
+  justify-content: center;
+  margin: 0 auto;
+`;
+export const Center = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  width: 312px;
+  justify-content: center;
+  margin: 0 auto;
+`;
+export const Right = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 417px;
+  justify-content: center;
+  margin: 0 auto;
+`;
+
+export const Ul = styled.ul`
+  list-style-type: none;
+  flex-direction: column;
+`;
+
+export const Li = styled.li`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+`;
+
+export const ImageContainer = styled.div`
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 206px;
+  width: 360px;
+  height: 290px;
+`;
+
+export const CenterImages = styled.div`
+  gap: 20px;
+`;
