@@ -1,4 +1,5 @@
 import {
+  BulletWrapper,
   BuyButton,
   Center,
   CenterContainer,
@@ -28,6 +29,8 @@ import leftImage from "../../images/leftImage.jpg";
 import rightImage from "../../images/rightImage.jpg";
 import centerLeft from "../../images/center1.jpg";
 import centerRight from "../../images/center2.jpg";
+import bulletFirst from "../../images/bullet1.png";
+import bulletSecond from "../../images/bullet2.png";
 
 export const Main = () => {
   return (
@@ -68,8 +71,14 @@ export const Main = () => {
             <StyledLine />
             <PrecisedDescription>
               <Ul>
-                <Li>Bezpośrednio do pyszczka</Li>
-                <Li>Zmieszany z karmą</Li>
+                <Li>
+                  <BulletWrapper src={bulletFirst} />
+                  Bezpośrednio do pyszczka
+                </Li>
+                <Li>
+                  <BulletWrapper src={bulletSecond} />
+                  Zmieszany z karmą
+                </Li>
               </Ul>
             </PrecisedDescription>
           </DescriptionHeader>

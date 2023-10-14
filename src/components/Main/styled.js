@@ -168,7 +168,6 @@ export const Li = styled.li`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 20px;
   margin-top: 20px;
 `;
 
@@ -222,4 +221,8 @@ export const UnderlineWrapper = styled.div`
     height: 1px;
     background-color: #111;
   }
+`;
+
+export const BulletWrapper = styled.img`
+  margin-right: 20px;
 `;
