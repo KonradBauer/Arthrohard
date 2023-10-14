@@ -107,10 +107,10 @@ export const Ingredients = () => {
             </Description>
           </RightSide>
         </ContentBox>
-        <ParallaxWrapper>
-          <Parallax src={dog} />
-        </ParallaxWrapper>
       </GridContainer>
+      <ParallaxWrapper>
+        <Parallax src={dog} />
+      </ParallaxWrapper>
     </>
   );
 };
