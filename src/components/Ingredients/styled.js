@@ -61,7 +61,7 @@ export const StyledLine = styled(Line)`
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   background: #fff;
 
   @media (max-width: 768px) {
@@ -71,6 +71,10 @@ export const GridContainer = styled.div`
 
 export const ContentBox = styled.div`
   margin-top: 85px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const ImageWrapper = styled.img`
@@ -124,8 +128,8 @@ export const Title = styled.div`
     content: "";
     position: absolute;
     bottom: -20px;
-    left: 0;
-    width: 100%;
+    left: 15%;
+    width: 70%;
     height: 1px;
     background-color: #111;
   }
@@ -157,4 +161,31 @@ export const StyledEllipse = styled(Ellipse)`
   width: 70px;
   height: 70px;
   fill: #d9d9d9;
+`;
+
+export const BuyNowButton = styled.button`
+  border: none;
+  display: flex;
+  color: #f6f6f6;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ad4844;
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(1.005);
+  }
 `;

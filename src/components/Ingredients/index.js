@@ -1,4 +1,5 @@
 import {
+  BuyNowButton,
   Container,
   ContentBox,
   Description,
@@ -66,6 +67,7 @@ export const Ingredients = () => {
         </ContentBox>
         <ContentBox>
           <ImageWrapper src={medicineIngredients} />
+          <BuyNowButton>Kup teraz</BuyNowButton>
         </ContentBox>
         <ContentBox>
           <RightSide>

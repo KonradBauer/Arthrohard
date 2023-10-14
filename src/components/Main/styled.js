@@ -68,6 +68,10 @@ export const BuyButton = styled.button`
   &:hover {
     transform: scale(1.05);
   }
+
+  &:active {
+    transform: scale(1.005);
+  }
 `;
 
 export const SectionWrapper = styled.div`
