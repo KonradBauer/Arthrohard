@@ -63,7 +63,8 @@ export const Main = () => {
         </Left>
         <Center>
           <DescriptionHeader>
-            Wygoda - dwa sposoby podawania
+            Wygoda -<br />
+            dwa sposoby podawania
             <StyledLine />
             <PrecisedDescription>
               <Ul>
@@ -75,7 +76,7 @@ export const Main = () => {
         </Center>
         <Right>
           <DescriptionHeader>
-            Skuteczność - skoncentrowana dawka
+            Skuteczność -<br /> skoncentrowana dawka
             <StyledLine />
             <PrecisedDescription>
               <strong>Tylko jedna porcja dziennie.</strong>

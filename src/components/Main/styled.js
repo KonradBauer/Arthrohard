@@ -128,6 +128,7 @@ export const PrecisedDescription = styled.div`
   font-weight: 400;
   line-height: normal;
   width: 417px;
+  margin-top: 30px;
 `;
 
 export const Left = styled.div`
