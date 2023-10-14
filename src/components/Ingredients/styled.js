@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Line } from "../../images/line.svg";
+import { ReactComponent as Ellipse } from "../../images/ellipse.svg";
 
 export const Container = styled.div`
   width: 100%;
@@ -55,4 +56,94 @@ export const StyledLine = styled(Line)`
   stroke-width: 1px;
   stroke: #111;
   justify-content: center;
+`;
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+`;
+
+export const ContentBox = styled.div`
+  border: 1px solid black;
+`;
+
+export const ImageWrapper = styled.img`
+  object-fit: cover;
+`;
+export const LeftSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 417px;
+  justify-content: center;
+`;
+
+export const RightSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 417px;
+  justify-content: center;
+`;
+
+export const Description = styled.div`
+  color: #111;
+  text-align: center;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+`;
+
+export const Title = styled.div`
+  color: #111;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  position: relative;
+
+  &:hover:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+  }
+`;
+
+export const Details = styled.div`
+  color: #111;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 417px;
+  margin-top: 30px;
+`;
+
+export const Text = styled.div`
+  margin-top: 40px;
+  color: #111;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+`;
+
+export const StyledEllipse = styled(Ellipse)`
+  width: 70px;
+  height: 70px;
+  fill: #d9d9d9;
 `;
