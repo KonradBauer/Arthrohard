@@ -25,10 +25,10 @@ import {
   Wrapper,
 } from "./styled";
 
-import leftImage from "../../images/leftImage.jpg";
-import rightImage from "../../images/rightImage.jpg";
-import centerLeft from "../../images/center1.jpg";
-import centerRight from "../../images/center2.jpg";
+import leftImage from "../../images/leftImage.png";
+import rightImage from "../../images/rightImage.png";
+import centerLeft from "../../images/center1.png";
+import centerRight from "../../images/center2.png";
 import bulletFirst from "../../images/bullet1.png";
 import bulletSecond from "../../images/bullet2.png";
 

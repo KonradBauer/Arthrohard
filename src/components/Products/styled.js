@@ -7,7 +7,7 @@ export const ProductsContainer = styled.div`
   padding: 143px;
 `;
 
-export const Tile = styled.div`
+export const Tile = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@ export const Tile = styled.div`
   text-align: center;
   margin-bottom: 35px;
   position: relative;
+  border: none;
   top: 0;
   transition: top ease 0.5s;
 
