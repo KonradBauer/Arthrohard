@@ -60,17 +60,23 @@ export const StyledLine = styled(Line)`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
+  background: #fff;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const ContentBox = styled.div`
-  border: 1px solid black;
+  margin-top: 85px;
 `;
 
 export const ImageWrapper = styled.img`
   object-fit: cover;
+  width: 600.867px;
+  height: 1238.309px;
 `;
 export const LeftSide = styled.div`
   display: flex;
@@ -79,6 +85,11 @@ export const LeftSide = styled.div`
   gap: 30px;
   width: 417px;
   justify-content: center;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const RightSide = styled.div`
@@ -88,8 +99,8 @@ export const RightSide = styled.div`
   gap: 30px;
   width: 417px;
   justify-content: center;
+  margin: 0 auto;
 `;
-
 export const Description = styled.div`
   color: #111;
   text-align: center;
