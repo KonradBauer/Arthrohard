@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.js": "/Arthrohard/static/js/main.34fb5ae3.js",
+    "main.js": "/Arthrohard/static/js/main.66fe0821.js",
     "static/js/787.e6200f06.chunk.js": "/Arthrohard/static/js/787.e6200f06.chunk.js",
+    "static/media/rightImage.jpg": "/Arthrohard/static/media/rightImage.b5677672cebd5eae610d.jpg",
+    "static/media/leftImage.jpg": "/Arthrohard/static/media/leftImage.a728651118fe6a8fe764.jpg",
     "static/media/medicine.svg": "/Arthrohard/static/media/medicine.c4e404acb26185914febaae9641bf384.svg",
+    "static/media/center2.jpg": "/Arthrohard/static/media/center2.d2ad553ffe2e89d64b34.jpg",
+    "static/media/center1.jpg": "/Arthrohard/static/media/center1.c7959ad977139a3082c3.jpg",
     "static/media/Logo.svg": "/Arthrohard/static/media/Logo.a87d5ed00de704edb6e01bdec429183f.svg",
     "index.html": "/Arthrohard/index.html",
     "static/media/line.svg": "/Arthrohard/static/media/line.3f381f99e02c26cb1592535185c430f9.svg",
-    "main.34fb5ae3.js.map": "/Arthrohard/static/js/main.34fb5ae3.js.map",
+    "main.66fe0821.js.map": "/Arthrohard/static/js/main.66fe0821.js.map",
     "787.e6200f06.chunk.js.map": "/Arthrohard/static/js/787.e6200f06.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.34fb5ae3.js"
+    "static/js/main.66fe0821.js"
   ]
 }
