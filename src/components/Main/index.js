@@ -20,6 +20,7 @@ import {
   SubDescription,
   SubHeader,
   Ul,
+  UnderlineWrapper,
   Wrapper,
 } from "./styled";
 
@@ -86,12 +87,16 @@ export const Main = () => {
         </Right>
       </ProductDescription>
       <ImageContainer>
-        <Images src={leftImage} alt="special ingredient" />
+        <UnderlineWrapper>
+          <Images src={leftImage} alt="special ingredient" />
+        </UnderlineWrapper>
         <CenterContainer>
           <CenteredImages src={centerLeft} alt="instruction" />
           <CenteredImages src={centerRight} alt="instruction" />
         </CenterContainer>
-        <Images src={rightImage} alt="dosage" />
+        <UnderlineWrapper>
+          <Images src={rightImage} alt="dosage" />
+        </UnderlineWrapper>
       </ImageContainer>
     </>
   );

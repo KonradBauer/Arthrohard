@@ -177,7 +177,6 @@ export const ImageContainer = styled.div`
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-
   gap: 206px;
   width: 1492px;
 `;
@@ -185,6 +184,16 @@ export const ImageContainer = styled.div`
 export const CenterContainer = styled.div`
   gap: 20px;
   display: flex;
+  position: relative;
+
+  &:hover:after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+  }
 `;
 
 export const Images = styled.img`
@@ -198,4 +207,18 @@ export const CenteredImages = styled.img`
   height: 294px;
   border-radius: 8px;
   object-fit: cover;
+`;
+
+export const UnderlineWrapper = styled.div`
+  position: relative;
+
+  &:hover:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -24px;
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+  }
 `;
