@@ -75,6 +75,7 @@ export const ContentBox = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
 export const ImageWrapper = styled.img`
@@ -164,6 +165,7 @@ export const StyledEllipse = styled(Ellipse)`
 `;
 
 export const BuyNowButton = styled.button`
+  margin-top: -100px;
   border: none;
   display: flex;
   color: #f6f6f6;
@@ -188,4 +190,16 @@ export const BuyNowButton = styled.button`
   &:active {
     transform: scale(1.005);
   }
+`;
+
+export const Parallax = styled.img`
+  width: 945px;
+  height: 496px;
+  flex-shrink: 0;
+`;
+
+export const ParallaxWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 166px;
 `;

@@ -9,6 +9,8 @@ import {
   HeaderWrapper,
   ImageWrapper,
   LeftSide,
+  Parallax,
+  ParallaxWrapper,
   RightSide,
   StyledEllipse,
   StyledLine,
@@ -18,6 +20,7 @@ import {
 } from "./styled";
 
 import medicineIngredients from "../../images/medicineIngredients.png";
+import dog from "../../images/dog.png";
 
 export const Ingredients = () => {
   return (
@@ -104,6 +107,9 @@ export const Ingredients = () => {
             </Description>
           </RightSide>
         </ContentBox>
+        <ParallaxWrapper>
+          <Parallax src={dog} />
+        </ParallaxWrapper>
       </GridContainer>
     </>
   );
