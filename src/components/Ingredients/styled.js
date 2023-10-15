@@ -204,4 +204,10 @@ export const ParallaxWrapper = styled.div`
   background: #fff;
   display: flex;
   justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  perspective: 1000px;
+  overflow: hidden;
 `;

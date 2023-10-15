@@ -19,10 +19,17 @@ import {
   Title,
 } from "./styled";
 
+import React, { useState } from "react";
+
 import medicineIngredients from "../../images/medicineIngredients.png";
 import dog from "../../images/dog.png";
 
 export const Ingredients = () => {
+  const [mouseX, setMouseX] = useState(500);
+
+  const handleMouseMove = (event) => {
+    setMouseX(event.clientX);
+  };
   return (
     <>
       <Container>
@@ -108,8 +115,13 @@ export const Ingredients = () => {
           </RightSide>
         </ContentBox>
       </GridContainer>
-      <ParallaxWrapper>
-        <Parallax src={dog} />
+      <ParallaxWrapper onMouseMove={handleMouseMove}>
+        <Parallax
+          src={dog}
+          style={{
+            transform: `translateX(${(mouseX - window.innerWidth / 2) / 30}px)`, // Dostosuj wartość 30 na podstawie intensywności efektu paralaksy
+          }}
+        />
       </ParallaxWrapper>
     </>
   );
