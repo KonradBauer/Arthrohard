@@ -1,30 +1,57 @@
-import React from "react";
-import { useQuery } from "@tanstack/react-query";
+import React, { useEffect, useRef } from "react";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import { fetchProducts } from "../../fetchProducts";
-import { ProductsContainer, Tile } from "./styled";
+import { ProductsContainer, StatusText, Tile } from "./styled";
 
 export const GetProducts = () => {
-  const { isLoading, isPaused, error, data } = useQuery(["products"], fetchProducts);
+  const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
+    useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, 2), {
+      getNextPageParam: (lastPage) => {
+        const nextPage = lastPage.pageNumber + 1;
+        return nextPage <= Math.ceil(lastPage.totalItems / lastPage.pageSize) ? nextPage : null;
+      },
+    });
 
-  if (data) {
-    return (
-      <ProductsContainer id="products">
-        {data.data.map((product) => (
-          <Tile key={product.id}>ID: {product.id}</Tile>
-        ))}
-      </ProductsContainer>
-    );
-  }
+  const bottomOfPageRef = useRef();
 
-  if (isPaused) {
-    return "No network access. Check your internet connection";
-  }
+  useEffect(() => {
+    const handleScroll = () => {
+      const { innerHeight } = window;
+      const { scrollY } = window;
+      const { scrollHeight } = document.documentElement;
+
+      if (innerHeight + scrollY >= scrollHeight - bottomOfPageRef.current.clientHeight) {
+        if (hasNextPage && !isFetchingNextPage) {
+          fetchNextPage();
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <StatusText>Loading...</StatusText>;
   }
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
+  if (isError) {
+    return <StatusText>Error: {isError.message}</StatusText>;
   }
+
+  return (
+    <ProductsContainer id="products">
+      {data.pages.map((page, pageIndex) => (
+        <React.Fragment key={pageIndex}>
+          {page.data.map((product) => (
+            <Tile key={product.id}>ID: {product.id}</Tile>
+          ))}
+        </React.Fragment>
+      ))}
+      {hasNextPage && <div ref={bottomOfPageRef}>{isFetchingNextPage}</div>}
+    </ProductsContainer>
+  );
 };

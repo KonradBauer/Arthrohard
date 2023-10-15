@@ -33,3 +33,15 @@ export const Tile = styled.button`
     top: -10px;
   }
 `;
+
+export const StatusText = styled.div`
+  color: #111;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  bottom: 0;
+  position: fixed;
+`;
