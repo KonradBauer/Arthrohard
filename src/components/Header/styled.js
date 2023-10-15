@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../../images/Logo.svg";
+import { NavLink } from "react-router-dom";
 
 export const Content = styled.div`
   max-width: 100%;
@@ -29,16 +30,20 @@ export const StyledLogo = styled(Logo)`
   flex-shrink: 0;
 `;
 
-export const NavButtons = styled.button`
+export const StyledNavButtons = styled(NavLink)`
   border: none;
   background: none;
   text-transform: uppercase;
   cursor: pointer;
   color: #111;
-  font-family: Futura PT, sans-serif;
+  font-family: "Futura PT", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
-  text-transform: uppercase;
+  text-decoration: none;
+
+  &.active {
+    text-decoration: underline;
+  }
 `;

@@ -3,15 +3,18 @@ import { Header } from "./components/Header";
 import { GetProducts } from "./components/Products";
 import { Main } from "./components/Main";
 import { Ingredients } from "./components/Ingredients";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <GlobalContainer>
-      <Header />
-      <Main />
-      <Ingredients />
-      <GetProducts />
-    </GlobalContainer>
+    <BrowserRouter>
+      <GlobalContainer>
+        <Header />
+        <Main />
+        <Ingredients />
+        <GetProducts />
+      </GlobalContainer>
+    </BrowserRouter>
   );
 }
 
