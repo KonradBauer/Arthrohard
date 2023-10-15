@@ -25,7 +25,7 @@ import medicineIngredients from "../../images/medicineIngredients.png";
 import dog from "../../images/dog.png";
 
 export const Ingredients = () => {
-  const [mouseX, setMouseX] = useState(500);
+  const [mouseX, setMouseX] = useState(0);
 
   const handleMouseMove = (event) => {
     setMouseX(event.clientX);
