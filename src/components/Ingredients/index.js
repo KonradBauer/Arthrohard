@@ -119,7 +119,7 @@ export const Ingredients = () => {
         <Parallax
           src={dog}
           style={{
-            transform: `translateX(${(mouseX - window.innerWidth / 2) / 30}px)`, // Dostosuj wartość 30 na podstawie intensywności efektu paralaksy
+            transform: `translateX(${(mouseX - window.innerWidth / 2) / 30}px)`,
           }}
         />
       </ParallaxWrapper>

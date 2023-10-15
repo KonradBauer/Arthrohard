@@ -2,8 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-
-html {
+  html {
     box-sizing: border-box;
     font-family: "Futura PT", sans-serif;
     scroll-behavior: smooth;
@@ -19,7 +18,6 @@ html {
     background: #F6F6F6;
     margin: 0;
     padding: 0;
-    
   }
 `;
 

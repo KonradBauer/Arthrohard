@@ -144,6 +144,7 @@ export const Left = styled.div`
   justify-content: center;
   margin: 0 auto;
 `;
+
 export const Center = styled.div`
   display: flex;
   flex-direction: row;
@@ -153,6 +154,7 @@ export const Center = styled.div`
   justify-content: center;
   margin: 0 auto;
 `;
+
 export const Right = styled.div`
   display: flex;
   flex-direction: column;
@@ -206,6 +208,7 @@ export const Images = styled.img`
   border-radius: 8px;
   object-fit: cover;
 `;
+
 export const CenteredImages = styled.img`
   width: 170px;
   height: 294px;

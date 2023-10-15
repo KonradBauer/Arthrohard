@@ -83,7 +83,8 @@ export const ImageWrapper = styled.img`
   width: 600.867px;
   height: 1238.309px;
 `;
-export const LeftSide = styled.div`
+
+export const Side = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,15 +98,10 @@ export const LeftSide = styled.div`
   }
 `;
 
-export const RightSide = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: 417px;
-  justify-content: center;
-  margin: 0 auto;
-`;
+export const LeftSide = styled(Side)``;
+
+export const RightSide = styled(Side)``;
+
 export const Description = styled.div`
   color: #111;
   text-align: center;
