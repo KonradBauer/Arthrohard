@@ -1,15 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { fetchProducts } from "../../fetchProducts";
-import { ProductsContainer, StatusText, Tile } from "./styled";
+import { Label, ProductsContainer, Select, SelectContainer, StatusText, Tile } from "./styled";
 import { Modal } from "../Modal";
 
 export const GetProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [itemsPerPage, setItemsPerPage] = useState(20); // Domyślna ilość elementów na stronie
 
   const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
-    useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, 2), {
+    useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {
       getNextPageParam: (lastPage) => {
         const nextPage = lastPage.pageNumber + 1;
         return nextPage <= Math.ceil(lastPage.totalItems / lastPage.pageSize) ? nextPage : null;
@@ -47,6 +48,21 @@ export const GetProducts = () => {
 
   return (
     <div>
+      <SelectContainer>
+        <Label htmlFor="itemsPerPage">liczba produktów na stronie:</Label>
+        <Select
+          id="itemsPerPage"
+          name="itemsPerPage"
+          onChange={(event) => setItemsPerPage(event.target.value)}
+          value={itemsPerPage}
+        >
+          <option value="10">10 sztuk</option>
+          <option value="20">20 sztuk</option>
+          <option value="30">30 sztuk</option>
+          <option value="50">50 sztuk</option>
+        </Select>
+      </SelectContainer>
+
       <ProductsContainer id="products">
         {data.pages.map((page, pageIndex) => (
           <React.Fragment key={pageIndex}>

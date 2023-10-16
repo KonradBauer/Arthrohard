@@ -45,3 +45,40 @@ export const StatusText = styled.div`
   bottom: 0;
   position: fixed;
 `;
+
+export const Label = styled.label`
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ad4844;
+  color: #000;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+`;
+
+export const SelectContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+`;
+
+export const Select = styled.select`
+  display: inline-flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ad4844;
+  color: #f6f6f6;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+`;
