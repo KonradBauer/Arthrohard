@@ -1,9 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { fetchProducts } from "../../fetchProducts";
 import { ProductsContainer, StatusText, Tile } from "./styled";
+import { Modal } from "../Modal";
 
 export const GetProducts = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, 2), {
       getNextPageParam: (lastPage) => {
@@ -43,15 +46,30 @@ export const GetProducts = () => {
   }
 
   return (
-    <ProductsContainer id="products">
-      {data.pages.map((page, pageIndex) => (
-        <React.Fragment key={pageIndex}>
-          {page.data.map((product) => (
-            <Tile key={product.id}>ID: {product.id}</Tile>
-          ))}
-        </React.Fragment>
-      ))}
-      {hasNextPage && <div ref={bottomOfPageRef}>{isFetchingNextPage}</div>}
-    </ProductsContainer>
+    <div>
+      <ProductsContainer id="products">
+        {data.pages.map((page, pageIndex) => (
+          <React.Fragment key={pageIndex}>
+            {page.data.map((product) => (
+              <Tile
+                key={product.id}
+                onClick={() => {
+                  setSelectedProduct(product);
+                  setIsModalOpen(true);
+                }}
+              >
+                ID: {product.id}
+              </Tile>
+            ))}
+          </React.Fragment>
+        ))}
+        {hasNextPage && <div ref={bottomOfPageRef}>{isFetchingNextPage}</div>}
+      </ProductsContainer>
+      <Modal
+        isOpen={isModalOpen}
+        closeModal={() => setIsModalOpen(false)}
+        product={selectedProduct}
+      />
+    </div>
   );
 };
