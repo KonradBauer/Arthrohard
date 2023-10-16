@@ -3,8 +3,7 @@ import { ReactComponent as Logo } from "../../images/Logo.svg";
 import { NavLink } from "react-router-dom";
 
 export const Content = styled.div`
-  position: relative;
-  width: 1920px;
+  max-width: 1920px;
   height: 122px;
   background-color: #ffffff;
   display: flex;
@@ -25,7 +24,6 @@ export const Navigation = styled.div`
 `;
 
 export const StyledLogo = styled(Logo)`
-  position: absolute;
   margin-left: 245px;
   width: 239px;
   height: 29px;

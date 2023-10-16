@@ -3,7 +3,7 @@ import { ReactComponent as Line } from "../../images/line.svg";
 import { ReactComponent as Ellipse } from "../../images/ellipse.svg";
 
 export const Container = styled.div`
-  width: 1920px;
+  max-width: 1920px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -64,9 +64,8 @@ export const GridContainer = styled.div`
   grid-template-rows: 1fr;
   background: #fff;
 
-  @media (max-width: 1692px) {
+  @media (max-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
   }
 `;
 
