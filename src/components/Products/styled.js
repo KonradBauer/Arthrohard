@@ -47,7 +47,7 @@ export const StatusText = styled.div`
 `;
 
 export const Label = styled.label`
-  display: inline-flex;
+  display: flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@ export const SelectContainer = styled.div`
 `;
 
 export const Select = styled.select`
-  display: inline-flex;
+  display: flex;
   padding: 10px 40px;
   justify-content: center;
   align-items: center;
@@ -81,4 +81,5 @@ export const Select = styled.select`
   font-weight: 700;
   line-height: normal;
   border: none;
+  cursor: pointer;
 `;
