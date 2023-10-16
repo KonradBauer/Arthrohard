@@ -7,6 +7,7 @@ import { Modal } from "../Modal";
 export const GetProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, 2), {
       getNextPageParam: (lastPage) => {
@@ -19,8 +20,7 @@ export const GetProducts = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const { innerHeight } = window;
-      const { scrollY } = window;
+      const { innerHeight, scrollY } = window;
       const { scrollHeight } = document.documentElement;
 
       if (innerHeight + scrollY >= scrollHeight - bottomOfPageRef.current.clientHeight) {
