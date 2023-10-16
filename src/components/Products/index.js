@@ -7,7 +7,7 @@ import { Modal } from "../Modal";
 export const GetProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [itemsPerPage, setItemsPerPage] = useState(20); // Domyślna ilość elementów na stronie
+  const [itemsPerPage, setItemsPerPage] = useState(20);
 
   const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {

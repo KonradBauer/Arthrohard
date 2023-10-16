@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1920px;
 `;
 
 export const StyledImage = styled(Image)`
