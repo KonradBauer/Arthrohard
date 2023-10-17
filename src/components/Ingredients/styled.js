@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { ReactComponent as Line } from "../../images/line.svg";
 import { ReactComponent as Ellipse } from "../../images/ellipse.svg";
 
+export const IngredientsGlobalWrapper = styled.div`
+  background: #fff;
+`;
+
 export const Container = styled.div`
   width: 100%;
   max-width: 1200px;
@@ -59,8 +63,8 @@ export const StyledLine = styled(Line)`
 
 export const FlexContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 export const ContentBox = styled.div`
@@ -71,8 +75,8 @@ export const ContentBox = styled.div`
 
 export const ImageWrapper = styled.img`
   object-fit: cover;
-  width: 600.867px;
-  height: 1238.309px;
+  max-width: 100%; /* Obrazek nie przekroczy szerokości kontenera */
+  margin: 20px 0; /* Dodaj marginesy dla odstępu od kolumn */
 `;
 
 export const LeftSide = styled.div`
@@ -80,7 +84,7 @@ export const LeftSide = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 417px;
+  max-width: 417px;
   justify-content: center;
   margin: 0 auto;
 `;
@@ -90,7 +94,7 @@ export const RightSide = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 417px;
+  max-width: 417px;
   justify-content: center;
   margin: 0 auto;
 `;
@@ -119,10 +123,13 @@ export const Title = styled.h2`
 `;
 
 export const Details = styled.p`
-  width: 417px;
-  margin-top: 15px;
-  font-size: 16px;
   color: #111;
+  text-align: center;
+  font-family: Futura PT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `;
 
 export const Text = styled.div`

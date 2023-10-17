@@ -9,10 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalContainer>
-        <Header />
-        <Main />
         <Ingredients />
-        <GetProducts />
       </GlobalContainer>
     </BrowserRouter>
   );
