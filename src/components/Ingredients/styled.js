@@ -3,14 +3,13 @@ import { ReactComponent as Line } from "../../images/line.svg";
 import { ReactComponent as Ellipse } from "../../images/ellipse.svg";
 
 export const Container = styled.div`
-  max-width: 100%;
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  background: #fff;
-  margin-top: 116px;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -52,26 +51,22 @@ export const SubHeader = styled.div`
 export const StyledLine = styled(Line)`
   width: 100%;
   max-width: 730px;
+  height: 1px;
+  background: #111;
   margin-top: 20px;
-  stroke-width: 1px;
-  stroke: #111;
-  justify-content: center;
+  align-self: center;
 `;
 
-export const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 1fr;
-  background: #fff;
+export const FlexContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 `;
 
 export const ContentBox = styled.div`
-  margin-top: 85px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
 `;
 
 export const ImageWrapper = styled.img`
@@ -101,44 +96,33 @@ export const RightSide = styled.div`
 `;
 
 export const Description = styled.div`
+  margin-top: 30px;
+  font-size: 18px;
   color: #111;
-  text-align: center;
-  font-size: 31px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: normal;
 `;
 
-export const Title = styled.div`
+export const Title = styled.h2`
+  font-size: 24px;
   color: #111;
-  text-align: center;
-  font-family: Futura PT;
-  font-size: 31px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: normal;
   position: relative;
 
   &:hover:after {
     content: "";
     position: absolute;
-    bottom: -20px;
-    left: 15%;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 70%;
     height: 1px;
     background-color: #111;
   }
 `;
 
-export const Details = styled.div`
-  color: #111;
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+export const Details = styled.p`
   width: 417px;
-  margin-top: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #111;
 `;
 
 export const Text = styled.div`
@@ -155,34 +139,24 @@ export const Text = styled.div`
 export const StyledEllipse = styled(Ellipse)`
   width: 70px;
   height: 70px;
-  fill: #d9d9d9;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 `;
 
 export const BuyNowButton = styled.button`
-  margin-top: -100px;
+  margin-top: 20px;
   border: none;
-  display: flex;
-  color: #f6f6f6;
-  font-family: Futura PT;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding: 10px 40px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   background: #ad4844;
+  color: #f6f6f6;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
   cursor: pointer;
-
-  transition: 0.2s;
 
   &:hover {
     transform: scale(1.05);
-  }
-
-  &:active {
-    transform: scale(1.005);
   }
 `;
 

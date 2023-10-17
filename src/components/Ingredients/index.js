@@ -4,7 +4,7 @@ import {
   ContentBox,
   Description,
   Details,
-  GridContainer,
+  FlexContainer,
   Header,
   HeaderWrapper,
   ImageWrapper,
@@ -39,7 +39,7 @@ export const Ingredients = () => {
           <SubHeader>Co dają poszczególne składniki:</SubHeader>
         </HeaderWrapper>
       </Container>
-      <GridContainer>
+      <FlexContainer>
         <ContentBox>
           <LeftSide>
             <StyledEllipse />
@@ -114,7 +114,7 @@ export const Ingredients = () => {
             </Description>
           </RightSide>
         </ContentBox>
-      </GridContainer>
+      </FlexContainer>
       <ParallaxWrapper onMouseMove={handleMouseMove}>
         <Parallax
           src={dog}
