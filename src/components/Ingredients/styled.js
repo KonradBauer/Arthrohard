@@ -63,10 +63,6 @@ export const GridContainer = styled.div`
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 1fr;
   background: #fff;
-
-  @media (max-width: 768px) {
-    display: flex;
-  }
 `;
 
 export const ContentBox = styled.div`
@@ -84,7 +80,7 @@ export const ImageWrapper = styled.img`
   height: 1238.309px;
 `;
 
-export const Side = styled.div`
+export const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,15 +88,17 @@ export const Side = styled.div`
   width: 417px;
   justify-content: center;
   margin: 0 auto;
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
-export const LeftSide = styled(Side)``;
-
-export const RightSide = styled(Side)``;
+export const RightSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 417px;
+  justify-content: center;
+  margin: 0 auto;
+`;
 
 export const Description = styled.div`
   color: #111;

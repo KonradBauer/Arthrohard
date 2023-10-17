@@ -3,7 +3,7 @@ import { ReactComponent as Logo } from "../../images/Logo.svg";
 import { NavLink } from "react-router-dom";
 
 export const Content = styled.div`
-  max-width: 1920px;
+  max-width: 100%;
   height: 122px;
   background-color: #ffffff;
   display: flex;

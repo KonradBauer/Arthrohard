@@ -3,7 +3,10 @@ import styled from "styled-components";
 export const ProductsContainer = styled.div`
   max-width: 1920px;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 143px;
 `;
