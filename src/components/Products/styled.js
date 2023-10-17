@@ -116,6 +116,10 @@ export const Label = styled.label`
   font-style: normal;
   font-weight: 450;
   line-height: normal;
+
+  @media (max-width: 470px) {
+    display: none;
+  }
 `;
 
 export const SelectContainer = styled.div`
