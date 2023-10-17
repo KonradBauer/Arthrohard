@@ -12,8 +12,10 @@ export const BodyOverlay = styled.div`
 `;
 
 export const ModalContainer = styled.div`
-  width: 843px;
-  height: 285px;
+  width: 50vw;
+  height: 50vh;
+  max-width: 843px;
+  max-height: 285px;
   flex-shrink: 0;
   border-radius: 8px;
   background: #fff;
@@ -22,6 +24,13 @@ export const ModalContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 1050px) {
+    width: 70vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
+  }
 `;
 
 export const ModalContent = styled.div`
@@ -50,6 +59,10 @@ export const ProductID = styled.div`
   font-style: normal;
   font-weight: 450;
   line-height: normal;
+
+  @media (max-width: 420px) {
+    font-size: 24px;
+  }
 `;
 
 export const ProductName = styled.div`
@@ -60,6 +73,9 @@ export const ProductName = styled.div`
   font-style: normal;
   font-weight: 450;
   line-height: normal;
+  @media (max-width: 420px) {
+    font-size: 24px;
+  }
 `;
 
 export const Value = styled.div`
@@ -71,6 +87,10 @@ export const Value = styled.div`
   font-weight: 450;
   line-height: normal;
   margin-top: 55px;
+
+  @media (max-width: 420px) {
+    font-size: 24px;
+  }
 `;
 
 export const FlexWrapper = styled.div`
