@@ -8,8 +8,11 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <GlobalContainer>
         <Main />
+        <Ingredients />
+        <GetProducts />
       </GlobalContainer>
     </BrowserRouter>
   );
