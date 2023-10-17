@@ -27,7 +27,7 @@ export const HeaderWrapper = styled.div`
 
 export const Header = styled.div`
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
   justify-content: center;
   text-align: center;
   font-family: Futura PT;
@@ -50,6 +50,7 @@ export const SubHeader = styled.div`
   font-weight: 450;
   line-height: normal;
   margin-top: 100px;
+  margin-bottom: 121px;
 `;
 
 export const StyledLine = styled(Line)`
@@ -68,15 +69,15 @@ export const FlexContainer = styled.div`
 `;
 
 export const ContentBox = styled.div`
-  flex: 1;
-  max-width: 400px;
+  width: 26.0625rem;
   text-align: center;
 `;
 
 export const ImageWrapper = styled.img`
+  max-width: 35.55419rem;
+  width: 100%;
+  height: 75.39431rem;
   object-fit: cover;
-  max-width: 100%; /* Obrazek nie przekroczy szerokości kontenera */
-  margin: 20px 0; /* Dodaj marginesy dla odstępu od kolumn */
 `;
 
 export const LeftSide = styled.div`
@@ -100,9 +101,9 @@ export const RightSide = styled.div`
 `;
 
 export const Description = styled.div`
-  margin-top: 30px;
   font-size: 18px;
   color: #111;
+  margin-top: -30px;
 `;
 
 export const Title = styled.h2`
@@ -149,11 +150,9 @@ export const StyledEllipse = styled(Ellipse)`
   background: #d9d9d9;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 10px;
 `;
 
 export const BuyNowButton = styled.button`
-  margin-top: 20px;
   border: none;
   background: #ad4844;
   color: #f6f6f6;
