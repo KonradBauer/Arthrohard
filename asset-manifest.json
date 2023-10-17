@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Arthrohard/static/js/main.b6424735.js",
+    "main.js": "/Arthrohard/static/js/main.e3361f28.js",
     "static/js/787.e6200f06.chunk.js": "/Arthrohard/static/js/787.e6200f06.chunk.js",
     "static/media/medicine.svg": "/Arthrohard/static/media/medicine.c4e404acb26185914febaae9641bf384.svg",
     "static/media/dog.png": "/Arthrohard/static/media/dog.df4bb30c3d718104f6a4.png",
@@ -13,10 +13,10 @@
     "index.html": "/Arthrohard/index.html",
     "static/media/line.svg": "/Arthrohard/static/media/line.3f381f99e02c26cb1592535185c430f9.svg",
     "static/media/ellipse.svg": "/Arthrohard/static/media/ellipse.8fb7e463ff7a01ffc975550fb8d13d90.svg",
-    "main.b6424735.js.map": "/Arthrohard/static/js/main.b6424735.js.map",
+    "main.e3361f28.js.map": "/Arthrohard/static/js/main.e3361f28.js.map",
     "787.e6200f06.chunk.js.map": "/Arthrohard/static/js/787.e6200f06.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b6424735.js"
+    "static/js/main.e3361f28.js"
   ]
 }
