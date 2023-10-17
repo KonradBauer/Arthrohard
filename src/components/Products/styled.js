@@ -8,7 +8,7 @@ export const ProductsContainer = styled.div`
   justify-items: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 3.3rem;
-  padding: 5vw; /* Używamy 5vw jako responsywnej jednostki dla paddingu */
+  padding: 5vw;
 
   @media (max-width: 1800px) {
     grid-template-columns: 1fr 1fr 1fr;

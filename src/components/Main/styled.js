@@ -3,6 +3,22 @@ import { ReactComponent as Logo } from "../../images/Logo.svg";
 import { ReactComponent as Image } from "../../images/medicine.svg";
 import { ReactComponent as Line } from "../../images/line.svg";
 
+export const GlobalComponentWrapper = styled.div`
+  width: 1920px;
+
+  @media (max-width: 320px) {
+    width: 320px;
+  }
+
+  @media (max-width: 480px) {
+    width: 480px;
+  }
+
+  @media (max-width: 768px) {
+    width: 768px;
+  }
+`;
+
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
