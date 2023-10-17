@@ -3,7 +3,7 @@ import { ReactComponent as Line } from "../../images/line.svg";
 import { ReactComponent as Ellipse } from "../../images/ellipse.svg";
 
 export const Container = styled.div`
-  max-width: 1920px;
+  max-width: 100%;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
