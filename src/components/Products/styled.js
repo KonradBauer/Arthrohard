@@ -1,14 +1,43 @@
 import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
-  width: 100%;
+  max-width: 1920px;
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
   align-items: center;
-  gap: 10px;
-  padding: 143px;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.3rem;
+  padding: 5vw; /* Używamy 5vw jako responsywnej jednostki dla paddingu */
+
+  @media (max-width: 1800px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 1350px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 1050px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 847px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  @media (max-width: 630px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 490px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 390px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Tile = styled.button`
@@ -25,7 +54,7 @@ export const Tile = styled.button`
   line-height: 40px;
   letter-spacing: 0em;
   text-align: center;
-  margin-bottom: 35px;
+
   position: relative;
   border: none;
   top: 0;
@@ -35,6 +64,30 @@ export const Tile = styled.button`
     border: 1px solid #484848;
     cursor: pointer;
     top: -10px;
+  }
+
+  @media (max-width: 847px) {
+    width: 270px;
+    height: 249px;
+  }
+
+  @media (max-width: 630px) {
+    width: 230px;
+    height: 209px;
+  }
+
+  @media (max-width: 550px) {
+    width: 200px;
+    height: 179px;
+  }
+
+  @media (max-width: 550px) {
+    width: 170px;
+    height: 149px;
+  }
+
+  @media (max-width: 390px) {
+    width: 80%;
   }
 `;
 
