@@ -39,6 +39,10 @@ export const Header = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 486px) {
+    font-size: 30px;
+  }
 `;
 
 export const SubHeader = styled.div`
@@ -51,6 +55,16 @@ export const SubHeader = styled.div`
   line-height: normal;
   margin-top: 100px;
   margin-bottom: 121px;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 486px) {
+    font-size: 22px;
+  }
 `;
 
 export const StyledLine = styled(Line)`
@@ -66,18 +80,38 @@ export const FlexContainer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 `;
 
 export const ContentBox = styled.div`
   width: 26.0625rem;
   text-align: center;
+
+  @media (max-width: 486px) {
+    width: auto;
+  }
 `;
 
 export const ImageWrapper = styled.img`
-  max-width: 35.55419rem;
+  max-width: 33.55419rem;
   width: 100%;
   height: 75.39431rem;
   object-fit: cover;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 export const LeftSide = styled.div`
@@ -88,6 +122,11 @@ export const LeftSide = styled.div`
   max-width: 417px;
   justify-content: center;
   margin: 0 auto;
+
+  @media (max-width: 486px) {
+    max-width: 320px;
+    padding: 10px;
+  }
 `;
 
 export const RightSide = styled.div`
@@ -98,12 +137,21 @@ export const RightSide = styled.div`
   max-width: 417px;
   justify-content: center;
   margin: 0 auto;
+
+  @media (max-width: 486px) {
+    max-width: 320px;
+    padding: 10px;
+  }
 `;
 
 export const Description = styled.div`
   font-size: 18px;
   color: #111;
   margin-top: -30px;
+
+  @media (max-width: 486px) {
+    font-size: 16px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -131,6 +179,10 @@ export const Details = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 486px) {
+    font-size: 18px;
+  }
 `;
 
 export const Text = styled.div`
@@ -142,6 +194,10 @@ export const Text = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 486px) {
+    font-size: 18px;
+  }
 `;
 
 export const StyledEllipse = styled(Ellipse)`
@@ -153,6 +209,7 @@ export const StyledEllipse = styled(Ellipse)`
 `;
 
 export const BuyNowButton = styled.button`
+  margin-bottom: 50px;
   border: none;
   background: #ad4844;
   color: #f6f6f6;
