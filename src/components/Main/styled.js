@@ -48,6 +48,7 @@ export const ProductDescription = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 135px;
+  margin-bottom: 116px;
 
   @media (max-width: 1590px) {
     gap: 0;
@@ -63,10 +64,12 @@ export const ProductDescription = styled.div`
 
   @media (max-width: 486px) {
     margin-top: 60px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: 320px) {
     margin-top: 40px;
+    margin-bottom: 30px;
   }
 `;
 
