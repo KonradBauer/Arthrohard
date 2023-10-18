@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as Image } from "../../images/medicine.svg";
-import { ReactComponent as Logo } from "../../images/Logo.svg";
+import { ReactComponent as Image } from "../../../images/medicine.svg";
+import { ReactComponent as Logo } from "../../../images/Logo.svg";
 
 export const Wrapper = styled.div`
   display: flex;
