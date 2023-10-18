@@ -190,8 +190,8 @@ export const CenterContainer = styled.div`
   &:hover:after {
     content: "";
     position: absolute;
-    bottom: -24px;
-    width: 100%;
+    bottom: -30px;
+    width: 115%;
     height: 1px;
     background-color: #111;
   }
