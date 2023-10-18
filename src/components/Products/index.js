@@ -58,7 +58,7 @@ export const GetProducts = () => {
         <Select
           id="itemsPerPage"
           name="itemsPerPage"
-          onChange={(event) => setItemsPerPage(event.target.value)}
+          onChange={(event) => setItemsPerPage(event.target.value, 10)}
           value={itemsPerPage}
         >
           <option value="10">10 sztuk</option>

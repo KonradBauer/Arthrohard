@@ -102,6 +102,7 @@ export const StatusText = styled.div`
   line-height: normal;
   bottom: 0;
   position: fixed;
+  width: 320px;
 `;
 
 export const Label = styled.label`
