@@ -1,28 +1,20 @@
 import {
   BulletWrapper,
-  BuyButton,
   Center,
   CenterContainer,
   CenteredImages,
-  Description,
   DescriptionHeader,
-  ImageContainer,
   Images,
   Left,
   Li,
   PrecisedDescription,
   ProductDescription,
-  ProductInfo,
   Right,
   SectionWrapper,
-  StyledImage,
   StyledLine,
-  StyledLogo,
-  SubDescription,
   SubHeader,
   Ul,
   UnderlineWrapper,
-  Wrapper,
 } from "./styled";
 
 import leftImage from "../../images/leftImage.png";
@@ -35,18 +27,6 @@ import bulletSecond from "../../images/bullet2.png";
 export const Main = () => {
   return (
     <>
-      <Wrapper>
-        <StyledImage />
-        <ProductInfo>
-          <StyledLogo />
-          <Description>Lab-V Arthrohard Preparat na wsparcie stawów dla psa i kota</Description>
-          <SubDescription>
-            Arthrohard to dobrze przyswajalny suplement diety w formie syropu,
-            <br /> stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
-          </SubDescription>
-          <BuyButton>Kup teraz</BuyButton>
-        </ProductInfo>
-      </Wrapper>
       <SectionWrapper>
         <SubHeader id="about">Co wyróżnia nasz preparat</SubHeader>
         <StyledLine />
@@ -63,6 +43,9 @@ export const Main = () => {
               stawowymi.
             </PrecisedDescription>
           </DescriptionHeader>
+          <UnderlineWrapper>
+            <Images src={leftImage} alt="special ingredient" />
+          </UnderlineWrapper>
         </Left>
         <Center>
           <DescriptionHeader>
@@ -82,6 +65,10 @@ export const Main = () => {
               </Ul>
             </PrecisedDescription>
           </DescriptionHeader>
+          <CenterContainer>
+            <CenteredImages src={centerLeft} alt="instruction" />
+            <CenteredImages src={centerRight} alt="instruction" />
+          </CenterContainer>
         </Center>
         <Right>
           <DescriptionHeader>
@@ -94,20 +81,11 @@ export const Main = () => {
               Skorzystaj z zalet Arthrohard i zobacz różnicę w komforcie życia swojego zwierzęcia.
             </PrecisedDescription>
           </DescriptionHeader>
+          <UnderlineWrapper>
+            <Images src={rightImage} alt="dosage" />
+          </UnderlineWrapper>
         </Right>
       </ProductDescription>
-      <ImageContainer>
-        <UnderlineWrapper>
-          <Images src={leftImage} alt="special ingredient" />
-        </UnderlineWrapper>
-        <CenterContainer>
-          <CenteredImages src={centerLeft} alt="instruction" />
-          <CenteredImages src={centerRight} alt="instruction" />
-        </CenterContainer>
-        <UnderlineWrapper>
-          <Images src={rightImage} alt="dosage" />
-        </UnderlineWrapper>
-      </ImageContainer>
     </>
   );
 };
