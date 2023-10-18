@@ -3,9 +3,11 @@ import { ReactComponent as Image } from "../../../images/medicine.svg";
 import { ReactComponent as Logo } from "../../../images/Logo.svg";
 
 export const Wrapper = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const StyledImage = styled(Image)`
@@ -16,6 +18,18 @@ export const StyledImage = styled(Image)`
 export const StyledLogo = styled(Logo)`
   width: 730px;
   height: auto;
+
+  @media (max-width: 1768px) {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 1000px) {
+    max-width: 90%;
+  }
+
+  @media (max-width: 846px) {
+    max-width: 70%;
+  }
 `;
 
 export const Description = styled.div`
