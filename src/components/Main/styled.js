@@ -144,6 +144,14 @@ export const Ul = styled.ul`
   flex-direction: column;
   width: 100%;
   max-width: 450px;
+
+  @media (max-width: 486px) {
+    padding: 0;
+  }
+
+  @media (max-width: 320px) {
+    padding: 0;
+  }
 `;
 
 export const Li = styled.li`
