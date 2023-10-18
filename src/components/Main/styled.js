@@ -56,10 +56,10 @@ export const ProductDescription = styled.div`
 
   @media (max-width: 1300px) {
     gap: 50px;
+    flex-wrap: wrap;
   }
 
   @media (max-width: 760px) {
-    flex-wrap: wrap;
   }
 
   @media (max-width: 486px) {
