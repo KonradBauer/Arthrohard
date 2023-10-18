@@ -91,7 +91,7 @@ export const PrecisedDescription = styled.div`
 
   @media (max-width: 486px) {
     font-size: 18px;
-
+    width: 380px;
     margin: 0 auto;
   }
 `;
