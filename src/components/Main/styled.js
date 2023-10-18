@@ -12,6 +12,9 @@ export const SectionWrapper = styled.div`
 
 export const SubHeader = styled.div`
   display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
   margin-top: 153px;
   text-align: center;
   font-family: Futura PT;
@@ -23,6 +26,14 @@ export const SubHeader = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 486px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 486px) {
+    margin: 0 auto;
+  }
 `;
 
 export const StyledLine = styled(Line)`
@@ -34,27 +45,23 @@ export const StyledLine = styled(Line)`
 `;
 
 export const ProductDescription = styled.div`
-  width: 100%;
-  max-width: 1546px;
-  gap: 200px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin-top: 135px;
-  margin-left: auto;
-  margin-right: auto;
 
   @media (max-width: 1590px) {
     gap: 0;
   }
 
   @media (max-width: 1300px) {
-    flex-direction: column;
     gap: 50px;
+    flex-direction: column;
   }
 
   @media (max-width: 760px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
   }
 `;
@@ -66,6 +73,10 @@ export const DescriptionHeader = styled.div`
   font-style: normal;
   font-weight: 450;
   line-height: normal;
+
+  @media (max-width: 486px) {
+    font-size: 24px;
+  }
 `;
 
 export const PrecisedDescription = styled.div`
@@ -77,6 +88,12 @@ export const PrecisedDescription = styled.div`
   line-height: normal;
   width: 417px;
   margin-top: 30px;
+
+  @media (max-width: 486px) {
+    font-size: 18px;
+
+    margin: 0 auto;
+  }
 `;
 
 export const Left = styled.div`
@@ -91,7 +108,7 @@ export const Left = styled.div`
 
 export const Center = styled.div`
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 10px;
   width: 312px;
@@ -112,6 +129,8 @@ export const Right = styled.div`
 export const Ul = styled.ul`
   list-style-type: none;
   flex-direction: column;
+  width: 100%;
+  max-width: 450px;
 `;
 
 export const Li = styled.li`
@@ -121,20 +140,12 @@ export const Li = styled.li`
   margin-top: 20px;
 `;
 
-export const ImageContainer = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 206px;
-  width: 1492px;
-`;
-
 export const CenterContainer = styled.div`
   gap: 20px;
   display: flex;
+  justify-content: center;
   position: relative;
+  align-items: center;
 
   &:hover:after {
     content: "";
@@ -147,15 +158,17 @@ export const CenterContainer = styled.div`
 `;
 
 export const Images = styled.img`
-  width: 360px;
-  height: 290px;
+  width: 100%;
+  height: auto;
+  max-width: 450px;
   border-radius: 8px;
   object-fit: cover;
 `;
 
 export const CenteredImages = styled.img`
-  width: 170px;
-  height: 294px;
+  width: 100%;
+  height: auto;
+  max-width: 450px;
   border-radius: 8px;
   object-fit: cover;
 `;
