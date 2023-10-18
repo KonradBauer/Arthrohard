@@ -8,7 +8,7 @@ import {
   Wrapper,
 } from "./styled";
 
-export const ProductPrewiev = () => {
+export const ProductPreview = () => {
   return (
     <>
       <Wrapper>
