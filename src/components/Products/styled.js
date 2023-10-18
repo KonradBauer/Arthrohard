@@ -94,6 +94,7 @@ export const Tile = styled.button`
 export const StatusText = styled.div`
   color: #111;
   text-align: center;
+  justify-content: center;
   font-family: Futura PT;
   font-size: 31px;
   font-style: normal;
