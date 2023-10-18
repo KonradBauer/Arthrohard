@@ -22,7 +22,7 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 `;
 
 export const Header = styled.div`

@@ -29,9 +29,6 @@ export const SubHeader = styled.div`
 
   @media (max-width: 486px) {
     font-size: 30px;
-  }
-
-  @media (max-width: 486px) {
     margin: 0 auto;
   }
 `;
@@ -58,11 +55,18 @@ export const ProductDescription = styled.div`
 
   @media (max-width: 1300px) {
     gap: 50px;
-    flex-direction: column;
   }
 
   @media (max-width: 760px) {
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 486px) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: 320px) {
+    margin-top: 40px;
   }
 `;
 
@@ -76,6 +80,11 @@ export const DescriptionHeader = styled.div`
 
   @media (max-width: 486px) {
     font-size: 24px;
+    width: 300px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 20px;
   }
 `;
 
@@ -91,8 +100,12 @@ export const PrecisedDescription = styled.div`
 
   @media (max-width: 486px) {
     font-size: 18px;
-    width: 380px;
+    width: 280px;
     margin: 0 auto;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 14px;
   }
 `;
 
@@ -138,6 +151,14 @@ export const Li = styled.li`
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
+
+  @media (max-width: 486px) {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 320px) {
+    margin-top: auto;
+  }
 `;
 
 export const CenterContainer = styled.div`
@@ -146,6 +167,14 @@ export const CenterContainer = styled.div`
   justify-content: center;
   position: relative;
   align-items: center;
+
+  @media (max-width: 486px) {
+    width: 140px;
+  }
+
+  @media (max-width: 320px) {
+    width: 120px;
+  }
 
   &:hover:after {
     content: "";
@@ -175,6 +204,14 @@ export const CenteredImages = styled.img`
 
 export const UnderlineWrapper = styled.div`
   position: relative;
+
+  @media (max-width: 486px) {
+    width: 300px;
+  }
+
+  @media (max-width: 320px) {
+    width: 280px;
+  }
 
   &:hover:after {
     content: "";
