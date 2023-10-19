@@ -103,6 +103,22 @@ export const StatusText = styled.div`
   position: fixed;
   margin-bottom: 30px;
   width: 320px;
+
+  @media (max-width: 630px) {
+    width: 80%;
+  }
+
+  @media (max-width: 550px) {
+    width: 70%;
+  }
+
+  @media (max-width: 550px) {
+    width: 50%;
+  }
+
+  @media (max-width: 390px) {
+    width: 30%;
+  }
 `;
 
 export const Label = styled.label`

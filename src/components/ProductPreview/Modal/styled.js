@@ -54,7 +54,7 @@ export const Description = styled.div`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media (max-width: 1768px) {
+  @media (max-width: 1800px) {
     margin-top: 30px;
   }
 
@@ -99,7 +99,7 @@ export const ProductInfo = styled.div`
   margin-right: 244px;
   margin-top: -50px;
 
-  @media (max-width: 1768px) {
+  @media (max-width: 1800px) {
     margin-top: 30px;
   }
 
