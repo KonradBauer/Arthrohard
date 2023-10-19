@@ -10,16 +10,13 @@ export const GetProducts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [itemsPerPage, setItemsPerPage] = useState(20);
 
-  const { data, isError, fetchNextPage, hasNextPage, isFetchingNextPage } = useInfiniteQuery(
-    ["products"],
-    ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage),
-    {
+  const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
+    useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {
       getNextPageParam: (lastPage) => {
         const nextPage = lastPage.pageNumber + 1;
         return nextPage <= Math.ceil(lastPage.totalItems / lastPage.pageSize) ? nextPage : null;
       },
-    }
-  );
+    });
 
   const bottomOfPageRef = useRef();
 
@@ -41,6 +38,10 @@ export const GetProducts = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
+
+  if (isLoading) {
+    return;
+  }
 
   if (isError) {
     return <StatusText>Error: {isError.message}</StatusText>;
