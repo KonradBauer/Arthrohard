@@ -30,6 +30,7 @@ export const SubHeader = styled.div`
   @media (max-width: 486px) {
     font-size: 30px;
     margin: 0 auto;
+    padding: 20px;
   }
 `;
 
