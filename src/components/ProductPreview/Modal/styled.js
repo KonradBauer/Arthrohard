@@ -17,6 +17,11 @@ export const StyledImage = styled(Image)`
   @media (max-width: 668px) {
     height: auto;
   }
+
+  @media (max-width: 400px) {
+    height: auto;
+    width: 90%;
+  }
 `;
 
 export const StyledLogo = styled(Logo)`
@@ -61,6 +66,11 @@ export const Description = styled.div`
     max-width: 70%;
     font-size: 28px;
   }
+
+  @media (max-width: 710px) {
+    max-width: 100%;
+    font-size: 22px;
+  }
 `;
 
 export const SubDescription = styled.div`
@@ -71,6 +81,16 @@ export const SubDescription = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 846px) {
+    max-width: 70%;
+    font-size: 18px;
+  }
+
+  @media (max-width: 710px) {
+    max-width: 100%;
+    font-size: 16px;
+  }
 `;
 
 export const ProductInfo = styled.div`
