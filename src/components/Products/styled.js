@@ -1,3 +1,4 @@
+import { RiseLoader } from "react-spinners";
 import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
@@ -91,36 +92,6 @@ export const Tile = styled.button`
   }
 `;
 
-export const StatusText = styled.div`
-  text-align: center;
-  justify-content: center;
-  font-family: Futura PT;
-  font-size: 31px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: normal;
-  bottom: 0;
-  position: fixed;
-  margin-bottom: 30px;
-  width: 320px;
-
-  @media (max-width: 630px) {
-    width: 80%;
-  }
-
-  @media (max-width: 550px) {
-    width: 70%;
-  }
-
-  @media (max-width: 550px) {
-    width: 50%;
-  }
-
-  @media (max-width: 390px) {
-    width: 30%;
-  }
-`;
-
 export const Label = styled.label`
   display: flex;
   padding: 10px;
@@ -161,4 +132,30 @@ export const Select = styled.select`
   line-height: normal;
   border: none;
   cursor: pointer;
+`;
+
+export const StatusText = styled.div`
+  text-align: center;
+  justify-content: center;
+  font-family: Futura PT;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  bottom: 0;
+  position: fixed;
+  margin-bottom: 30px;
+  width: 320px;
+`;
+
+export const LoaderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  margin-top: 20px;
+`;
+
+export const CustomRiseLoader = styled(RiseLoader)`
+  width: ${(props) => (props.smallScreen ? "25px" : "50px")};
 `;

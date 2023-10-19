@@ -68,7 +68,7 @@ export const ProductID = styled.div`
   line-height: normal;
 
   @media (max-width: 420px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 `;
 
@@ -80,8 +80,9 @@ export const ProductName = styled.div`
   font-style: normal;
   font-weight: 450;
   line-height: normal;
+
   @media (max-width: 420px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 `;
 
@@ -96,7 +97,7 @@ export const Value = styled.div`
   margin-top: 55px;
 
   @media (max-width: 420px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 `;
 
