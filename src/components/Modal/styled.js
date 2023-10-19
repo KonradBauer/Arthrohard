@@ -31,6 +31,13 @@ export const ModalContainer = styled.div`
     max-width: 100%;
     max-height: 80vh;
   }
+
+  @media (max-width: 400px) {
+    width: 85vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
+  }
 `;
 
 export const ModalContent = styled.div`
@@ -107,4 +114,12 @@ export const ContentWrapper = styled.div`
   align-items: flex-start;
   margin-top: 63px;
   padding: 8px 20px;
+
+  @media (max-width: 400px) {
+    width: 70vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    margin-top: auto;
+  }
 `;
