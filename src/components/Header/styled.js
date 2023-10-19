@@ -67,7 +67,7 @@ export const StyledNavButtons = styled(NavLink)`
     font-size: 10px;
   }
 
-  &.active {
+  &:hover {
     text-decoration: underline;
   }
 `;
