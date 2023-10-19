@@ -53,12 +53,15 @@ export const StyledNavButtons = styled(NavLink)`
   text-transform: uppercase;
   cursor: pointer;
   color: #111;
-  font-family: "Futura PT", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
   text-decoration: none;
+
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
 
   &.active {
     text-decoration: underline;
