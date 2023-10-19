@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { ReactComponent as Line } from "../../images/line.svg";
 import { ReactComponent as Ellipse } from "../../images/ellipse.svg";
+import { ReactComponent as VectorRight } from "../../images/vectorRight.svg";
+import { ReactComponent as VectorLeft } from "../../images/vectorLeft.svg";
 
 export const IngredientsGlobalWrapper = styled.div`
   background: #fff;
@@ -14,6 +16,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -223,6 +226,27 @@ export const BuyNowButton = styled.button`
   }
 `;
 
+export const StyledVectorRight = styled(VectorRight)`
+  flex-shrink: 0;
+  position: absolute;
+  margin: 260px 55px 66.65px 618px;
+  z-index: -1;
+`;
+
+export const StyledVectorLeft = styled(VectorLeft)`
+  flex-shrink: 0;
+  position: absolute;
+  margin: 324px 966px 120px 607px;
+  z-index: -1;
+
+  @media (max-width: 868px) {
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+`;
+
 export const Parallax = styled.img`
   width: 945px;
   height: 496px;
@@ -231,6 +255,7 @@ export const Parallax = styled.img`
 `;
 
 export const ParallaxWrapper = styled.div`
+  position: relative;
   width: 100%;
   background: #fff;
   display: flex;
