@@ -13,6 +13,10 @@ export const Wrapper = styled.div`
 export const StyledImage = styled(Image)`
   max-width: 100%;
   margin-top: 31px;
+
+  @media (max-width: 668px) {
+    height: auto;
+  }
 `;
 
 export const StyledLogo = styled(Logo)`
@@ -20,11 +24,11 @@ export const StyledLogo = styled(Logo)`
   height: auto;
 
   @media (max-width: 1768px) {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   @media (max-width: 1000px) {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   @media (max-width: 846px) {
@@ -44,6 +48,19 @@ export const Description = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 1768px) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 846px) {
+    max-width: 70%;
+    font-size: 28px;
+  }
 `;
 
 export const SubDescription = styled.div`
@@ -61,6 +78,19 @@ export const ProductInfo = styled.div`
   margin-left: 111px;
   margin-right: 244px;
   margin-top: -50px;
+
+  @media (max-width: 1768px) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 846px) {
+    max-width: 70%;
+  }
 `;
 
 export const BuyButton = styled.button`
@@ -77,6 +107,10 @@ export const BuyButton = styled.button`
   border: none;
   cursor: pointer;
   transition: 0.2s;
+
+  @media (max-width: 846px) {
+    width: 100%;
+  }
 
   &:hover {
     transform: scale(1.05);
