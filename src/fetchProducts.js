@@ -6,7 +6,7 @@ export const fetchProducts = async (pageNumber, pageSize) => {
       `https://brandstestowy.smallhost.pl/api/random?pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
 
-    await new Promise((resolve) => setTimeout(resolve, 300));
+    await new Promise((resolve) => setTimeout(resolve, 500));
 
     return response.data;
   } catch (error) {

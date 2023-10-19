@@ -92,7 +92,6 @@ export const Tile = styled.button`
 `;
 
 export const StatusText = styled.div`
-  color: #111;
   text-align: center;
   justify-content: center;
   font-family: Futura PT;
@@ -102,6 +101,7 @@ export const StatusText = styled.div`
   line-height: normal;
   bottom: 0;
   position: fixed;
+  margin-bottom: 30px;
   width: 320px;
 `;
 

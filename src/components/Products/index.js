@@ -3,7 +3,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { fetchProducts } from "../../fetchProducts";
 import { Label, ProductsContainer, Select, SelectContainer, StatusText, Tile } from "./styled";
 import { Modal } from "../Modal";
-import { SyncLoader } from "react-spinners";
+import { RiseLoader } from "react-spinners";
 
 export const GetProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -42,7 +42,7 @@ export const GetProducts = () => {
   if (isLoading) {
     return (
       <StatusText>
-        <SyncLoader />
+        <RiseLoader />
       </StatusText>
     );
   }
@@ -85,7 +85,7 @@ export const GetProducts = () => {
           </React.Fragment>
         ))}
         {hasNextPage && <div ref={bottomOfPageRef}>{isFetchingNextPage}</div>}
-        <StatusText>{isFetchingNextPage ? <SyncLoader /> : null}</StatusText>
+        <StatusText>{isFetchingNextPage ? <RiseLoader color="#bebebe" /> : null}</StatusText>
       </ProductsContainer>
       <Modal
         isOpen={isModalOpen}
