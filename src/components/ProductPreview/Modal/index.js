@@ -4,6 +4,7 @@ import {
   ProductInfo,
   StyledImage,
   StyledLogo,
+  StyledMainLeftVector,
   SubDescription,
   Wrapper,
 } from "./styled";
@@ -22,6 +23,7 @@ export const ProductPreview = () => {
           </SubDescription>
           <BuyButton>Kup teraz</BuyButton>
         </ProductInfo>
+        <StyledMainLeftVector />
       </Wrapper>
     </>
   );

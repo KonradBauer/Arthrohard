@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Image } from "../../../images/medicine.svg";
 import { ReactComponent as Logo } from "../../../images/Logo.svg";
+import { ReactComponent as MainLeftVector } from "../../../images/MainLeftVector.svg";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -139,4 +140,9 @@ export const BuyButton = styled.button`
   &:active {
     transform: scale(1.005);
   }
+`;
+
+export const StyledMainLeftVector = styled(MainLeftVector)`
+  position: absolute;
+  margin: 1450px 1900px auto -423px;
 `;
