@@ -26,7 +26,7 @@ export const GetProducts = () => {
       },
     });
 
-  const bottomOfPageRef = useRef();
+  const bottomOfPageRef = useRef({ clientHeight: 100 });
 
   useEffect(() => {
     const handleScroll = () => {
