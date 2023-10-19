@@ -8,7 +8,7 @@ export const Content = styled.div`
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   padding: 0 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
@@ -61,6 +61,10 @@ export const StyledNavButtons = styled(NavLink)`
 
   @media (max-width: 400px) {
     font-size: 12px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
   }
 
   &.active {
