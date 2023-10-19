@@ -15,6 +15,8 @@ import {
   RightSide,
   StyledEllipse,
   StyledLine,
+  StyledVectorLeft,
+  StyledVectorRight,
   SubHeader,
   Text,
   Title,
@@ -121,9 +123,11 @@ export const Ingredients = () => {
           <Parallax
             src={dog}
             style={{
-              transform: `translateX(${(mouseX - window.innerWidth / 2) / 30}px)`,
+              transform: `translateX(${(mouseX - window.innerWidth / 2) / 20}px)`,
             }}
           />
+          <StyledVectorRight />
+          <StyledVectorLeft />
         </ParallaxWrapper>
       </IngredientsGlobalWrapper>
     </>
