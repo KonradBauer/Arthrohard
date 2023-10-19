@@ -229,21 +229,42 @@ export const BuyNowButton = styled.button`
 export const StyledVectorRight = styled(VectorRight)`
   flex-shrink: 0;
   position: absolute;
-  margin: 260px 55px 66.65px 618px;
+  bottom: -8%;
+  right: 28%;
+  width: 20%;
   z-index: -1;
+
+  @media (max-width: 768px) {
+    bottom: -17%;
+    right: 15%;
+    max-width: 20%;
+  }
+
+  @media (max-width: 486px) {
+    bottom: -40%;
+    right: 15%;
+    max-width: 30%;
+  }
 `;
 
 export const StyledVectorLeft = styled(VectorLeft)`
   flex-shrink: 0;
   position: absolute;
-  margin: 324px 966px 120px 607px;
+  bottom: -15%;
+  left: 30%;
+  width: 20%;
   z-index: -1;
 
-  @media (max-width: 868px) {
-    img {
-      width: 90%;
-      height: auto;
-    }
+  @media (max-width: 768px) {
+    bottom: -30%;
+    left: 18%;
+    max-width: 25%;
+  }
+
+  @media (max-width: 486px) {
+    bottom: -50%;
+    left: 15%;
+    max-width: 30%;
   }
 `;
 
