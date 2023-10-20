@@ -1,6 +1,6 @@
 # Arthrohard
 
-## See [Demo](konradbauer.github.io/Arthrohard/)
+## See [Demo](https://konradbauer.github.io/Arthrohard/)
 
 Arthrohard is an online store that sells pet supplies. This app is to show off my programming skills. This application can be developed in the future with additional functionalities, such as adding products to the basket, connecting another API that will display images, or a user login function.
 
