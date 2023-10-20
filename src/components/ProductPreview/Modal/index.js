@@ -1,4 +1,8 @@
-import { StyledMainImageRightVector } from "../../Main/styled";
+import {
+  StyledMainCenterLeftVector,
+  StyledMainCenterRightVector,
+  StyledMainImageRightVector,
+} from "../../Main/styled";
 import {
   BuyButton,
   Description,
@@ -26,6 +30,8 @@ export const ProductPreview = () => {
         </ProductInfo>
         <StyledMainLeftVector />
         <StyledMainImageRightVector />
+        <StyledMainCenterLeftVector />
+        <StyledMainCenterRightVector />
       </Wrapper>
     </>
   );

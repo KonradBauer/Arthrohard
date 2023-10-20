@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { ReactComponent as Line } from "../../images/line.svg";
 import { ReactComponent as MainImageLeftVector } from "../../images/MainImageLeftVector.svg";
 import { ReactComponent as MainImageRightVector } from "../../images/MainImageRightVector.svg";
+import { ReactComponent as MainCenterLeftVector } from "../../images/MainCenterLeftVector.svg";
+import { ReactComponent as MainCenterRightVector } from "../../images/MainCenterRightVector.svg";
 
 export const SectionWrapper = styled.div`
   display: flex;
@@ -260,6 +262,32 @@ export const StyledMainImageRightVector = styled(MainImageRightVector)`
   width: 50%;
   top: 140%;
   right: 46.5%;
+  background-size: auto;
+  z-index: -1;
+
+  @media (max-width: 1800px) {
+    display: none;
+  }
+`;
+
+export const StyledMainCenterLeftVector = styled(MainCenterLeftVector)`
+  position: absolute;
+  width: 50%;
+  top: 142%;
+  right: 35%;
+  background-size: auto;
+  z-index: -1;
+
+  @media (max-width: 1800px) {
+    display: none;
+  }
+`;
+
+export const StyledMainCenterRightVector = styled(MainCenterRightVector)`
+  position: absolute;
+  width: 50%;
+  top: 142%;
+  right: 16.5%;
   background-size: auto;
   z-index: -1;
 
