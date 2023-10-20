@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../../images/Logo.svg";
-import { NavLink } from "react-router-dom";
 
 export const Content = styled.div`
   max-width: 100%;
@@ -47,7 +46,7 @@ export const StyledLogo = styled(Logo)`
   }
 `;
 
-export const StyledNavButtons = styled(NavLink)`
+export const StyledNavButtons = styled.a`
   border: none;
   background: none;
   text-transform: uppercase;
