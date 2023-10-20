@@ -144,5 +144,14 @@ export const BuyButton = styled.button`
 
 export const StyledMainLeftVector = styled(MainLeftVector)`
   position: absolute;
-  margin: 1450px 1900px auto -423px;
+  height: 40%;
+  width: 50%;
+  top: 83%;
+  right: 66%;
+  background-size: auto;
+  z-index: -1;
+
+  @media (max-width: 1800px) {
+    display: none;
+  }
 `;

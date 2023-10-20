@@ -16,7 +16,6 @@ export const GlobalStyle = createGlobalStyle`
     background: #F6F6F6;
     margin: 0;
     padding: 0;
-    position: relative;
   }
 `;
 
