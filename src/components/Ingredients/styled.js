@@ -245,6 +245,12 @@ export const StyledVectorRight = styled(VectorRight)`
     right: 15%;
     max-width: 30%;
   }
+
+  @media (max-width: 320px) {
+    bottom: -55%;
+    left: 66%;
+    max-width: 30%;
+  }
 `;
 
 export const StyledVectorLeft = styled(VectorLeft)`
@@ -264,6 +270,12 @@ export const StyledVectorLeft = styled(VectorLeft)`
   @media (max-width: 486px) {
     bottom: -50%;
     left: 15%;
+    max-width: 30%;
+  }
+
+  @media (max-width: 320px) {
+    bottom: -60%;
+    left: 20%;
     max-width: 30%;
   }
 `;
