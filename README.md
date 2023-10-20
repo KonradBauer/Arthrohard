@@ -1,6 +1,6 @@
 # Arthrohard
 
-## 🐕 Arthrohard is an online store that sells pet supplies. This app is to show off my programming skills. This application can be developed in the future with additional functionalities, such as adding products to the basket, connecting another API that will display images, or a user login function. 🐕
+## 🐕 Arthrohard is an online store that sells pet supplies. In this page you can read about product Arthrohard - supplement for dogs and cats, supports their joints. Next you can read about this supplement - the ingredients, instructions for use and dosage. On the bottom of this page you can find another products. This products is loaded by the `Lazy Loading`. This app is to show off my programming skills. This application can be developed in the future with additional functionalities, such as adding products to the basket, connecting another API that will display images, or a user login function. 🐕
 
 ## See [Demo](https://konradbauer.github.io/Arthrohard/)
 
