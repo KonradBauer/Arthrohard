@@ -168,9 +168,11 @@ export const Li = styled.li`
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
+  font-size: 20px;
 
   @media (max-width: 486px) {
     margin-top: 10px;
+    font-size: 14px;
   }
 
   @media (max-width: 320px) {
