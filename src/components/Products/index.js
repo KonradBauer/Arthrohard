@@ -10,6 +10,7 @@ import {
   StatusText,
   CustomRiseLoader,
   LoaderContainer,
+  IDStyle,
 } from "./styled";
 import { Modal } from "../Modal";
 
@@ -82,7 +83,7 @@ export const GetProducts = () => {
                   setIsModalOpen(true);
                 }}
               >
-                ID: {product.id}
+                <IDStyle>ID: {product.id}</IDStyle>
               </Tile>
             ))}
           </React.Fragment>

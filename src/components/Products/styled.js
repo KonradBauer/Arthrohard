@@ -134,6 +134,14 @@ export const Select = styled.select`
   cursor: pointer;
 `;
 
+export const IDStyle = styled.div`
+  font-size: normal;
+
+  @media (max-width: 486px) {
+    font-size: 20px;
+  }
+`;
+
 export const StatusText = styled.div`
   text-align: center;
   justify-content: center;
