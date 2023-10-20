@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Line } from "../../images/line.svg";
+import { ReactComponent as MainImageLeftVector } from "../../images/MainImageLeftVector.svg";
 
 export const SectionWrapper = styled.div`
   display: flex;
@@ -238,4 +239,17 @@ export const UnderlineWrapper = styled.div`
 
 export const BulletWrapper = styled.img`
   margin-right: 20px;
+`;
+
+export const StyledMainImageLeftVector = styled(MainImageLeftVector)`
+  position: absolute;
+  width: 50%;
+  top: 143%;
+  right: 65%;
+  background-size: auto;
+  z-index: -1;
+
+  @media (max-width: 1800px) {
+    display: none;
+  }
 `;

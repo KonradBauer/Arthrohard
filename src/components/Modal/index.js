@@ -38,7 +38,7 @@ export const Modal = ({ isOpen, closeModal, product }) => {
         <ModalContent onClick={(event) => event.stopPropagation()}>
           <FlexWrapper>
             <ProductID>ID: {product.id}</ProductID>
-            <CloseButton onClick={handleModalClose}>x</CloseButton>
+            <CloseButton onClick={handleModalClose}>✘</CloseButton>
           </FlexWrapper>
           <ContentWrapper>
             <ProductName>Nazwa: {product.name}</ProductName>

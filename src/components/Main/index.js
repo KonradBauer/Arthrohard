@@ -12,6 +12,7 @@ import {
   Right,
   SectionWrapper,
   StyledLine,
+  StyledMainImageLeftVector,
   SubHeader,
   Ul,
   UnderlineWrapper,
@@ -86,6 +87,7 @@ export const Main = () => {
           </UnderlineWrapper>
         </Right>
       </ProductDescription>
+      <StyledMainImageLeftVector />
     </>
   );
 };
