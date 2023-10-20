@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Arthrohard/static/js/main.28444f35.js",
+    "main.js": "/Arthrohard/static/js/main.46678ef7.js",
     "static/js/787.e6200f06.chunk.js": "/Arthrohard/static/js/787.e6200f06.chunk.js",
     "static/media/medicine.svg": "/Arthrohard/static/media/medicine.c4e404acb26185914febaae9641bf384.svg",
     "static/media/dog.png": "/Arthrohard/static/media/dog.d7bd220aca589ca352b5.png",
@@ -10,16 +10,21 @@
     "static/media/center1.png": "/Arthrohard/static/media/center1.bc1132d7daa52b57ddc9.png",
     "static/media/center2.png": "/Arthrohard/static/media/center2.1fc99ae01a5659e1d084.png",
     "static/media/MainLeftVector.svg": "/Arthrohard/static/media/MainLeftVector.53774da5b78e8d8a89454d635c6231e3.svg",
+    "static/media/MainCenterRightVector.svg": "/Arthrohard/static/media/MainCenterRightVector.9c0e744da1eee199dfed4af495c5d2d0.svg",
+    "static/media/MainCenterLeftVector.svg": "/Arthrohard/static/media/MainCenterLeftVector.2f76b49bd817f6564b822d481cee00e5.svg",
+    "static/media/MainImageRightVector.svg": "/Arthrohard/static/media/MainImageRightVector.53cbeec173c487e052ed5bbe306fb679.svg",
+    "static/media/MainImageLeftVector.svg": "/Arthrohard/static/media/MainImageLeftVector.7891ea60bc25f406c567f4126d5c59dd.svg",
+    "static/media/MainRightImageLeftVector.svg": "/Arthrohard/static/media/MainRightImageLeftVector.257e7d9156ee5065f89a56b046ecd783.svg",
     "static/media/vectorLeft.svg": "/Arthrohard/static/media/vectorLeft.996e4f6d7c7cf71a1001ba956efc399b.svg",
     "static/media/vectorRight.svg": "/Arthrohard/static/media/vectorRight.5b82e3dbf7901885c429c915c3e9e44e.svg",
     "static/media/Logo.svg": "/Arthrohard/static/media/Logo.a87d5ed00de704edb6e01bdec429183f.svg",
     "index.html": "/Arthrohard/index.html",
     "static/media/line.svg": "/Arthrohard/static/media/line.3f381f99e02c26cb1592535185c430f9.svg",
     "static/media/ellipse.svg": "/Arthrohard/static/media/ellipse.8fb7e463ff7a01ffc975550fb8d13d90.svg",
-    "main.28444f35.js.map": "/Arthrohard/static/js/main.28444f35.js.map",
+    "main.46678ef7.js.map": "/Arthrohard/static/js/main.46678ef7.js.map",
     "787.e6200f06.chunk.js.map": "/Arthrohard/static/js/787.e6200f06.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.28444f35.js"
+    "static/js/main.46678ef7.js"
   ]
 }
