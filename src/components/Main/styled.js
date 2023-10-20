@@ -253,7 +253,7 @@ export const StyledFlowerLeftVector = styled(FlowerLeftVector)`
   background-size: auto;
   z-index: -1;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1900px) {
     display: none;
   }
 `;
@@ -266,7 +266,7 @@ export const StyledFlowerRightVector = styled(FlowerRightVector)`
   background-size: auto;
   z-index: -1;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1900px) {
     display: none;
   }
 `;
@@ -279,7 +279,7 @@ export const StyledCenterLeftVector = styled(CenterLeftVector)`
   background-size: auto;
   z-index: -1;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1900px) {
     display: none;
   }
 `;
@@ -292,7 +292,7 @@ export const StyledCenterRightVector = styled(CenterRightVector)`
   background-size: auto;
   z-index: -1;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1900px) {
     display: none;
   }
 `;
@@ -305,7 +305,7 @@ export const StyledSyringeLeftVector = styled(SyringeLeftVector)`
   background-size: auto;
   z-index: -1;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1900px) {
     display: none;
   }
 `;

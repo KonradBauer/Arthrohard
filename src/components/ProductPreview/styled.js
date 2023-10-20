@@ -151,7 +151,7 @@ export const StyledMainLeftVector = styled(MainLeftVector)`
   background-size: auto;
   z-index: -1;
 
-  @media (max-width: 1800px) {
+  @media (max-width: 1900px) {
     display: none;
   }
 `;
