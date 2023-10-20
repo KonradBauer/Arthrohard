@@ -20,7 +20,7 @@ Arthrohard is an online store that sells pet supplies. This app is to show off m
     │   ├── index.html
     │   ├── manifest.json
     │   ├── robots.txt
-    │   └── sharen.png
+    │   └── share.png
     ├── src
     │   ├── components
     │   │   ├── Header
