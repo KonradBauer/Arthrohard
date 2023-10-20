@@ -10,19 +10,21 @@ import {
 } from "./styled";
 
 export const ProductPreview = () => {
-  <>
-    <Wrapper>
-      <StyledImage />
-      <ProductInfo>
-        <StyledLogo />
-        <Description>Lab-V Arthrohard Preparat na wsparcie stawów dla psa i kota</Description>
-        <SubDescription>
-          Arthrohard to dobrze przyswajalny suplement diety w formie syropu,
-          <br /> stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
-        </SubDescription>
-        <BuyButton>Kup teraz</BuyButton>
-      </ProductInfo>
-    </Wrapper>
-    <StyledMainLeftVector />
-  </>;
+  return (
+    <>
+      <Wrapper>
+        <StyledImage />
+        <ProductInfo>
+          <StyledLogo />
+          <Description>Lab-V Arthrohard Preparat na wsparcie stawów dla psa i kota</Description>
+          <SubDescription>
+            Arthrohard to dobrze przyswajalny suplement diety w formie syropu,
+            <br /> stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
+          </SubDescription>
+          <BuyButton>Kup teraz</BuyButton>
+        </ProductInfo>
+      </Wrapper>
+      <StyledMainLeftVector />
+    </>
+  );
 };
