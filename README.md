@@ -4,9 +4,55 @@
 
 Arthrohard is an online store that sells pet supplies. This app is to show off my programming skills. This application can be developed in the future with additional functionalities, such as adding products to the basket, connecting another API that will display images, or a user login function.
 
-![example](https://github.com/KonradBauer/movies-browser/blob/1f13f65493f779c9f542299e3a6734a8ca48771c/public/moviebrowser1.gif)
+## Desktop view:
+
+![example](https://github.com/KonradBauer/Arthrohard/blob/main/src/images/DesktopView.gif?raw=true)
+
+## Mobile view: 
+
+![example](https://github.com/KonradBauer/Arthrohard/blob/main/src/images/MobileView.gif?raw=true)
 
 ## Files Structure
+```
+└── root
+    ├── public
+    │   ├── dog.png
+    │   ├── index.html
+    │   ├── manifest.json
+    │   ├── robots.txt
+    │   └── sharenpng
+    ├── src
+    │   ├── components
+    │   │   ├── Header
+    │   │   │   ├── index.js
+    │   │   │   └── styled.js
+    │   │   ├── Ingredients
+    │   │   │   ├── index.js
+    │   │   │   └── styled.js
+    │   │   ├── Main
+    │   │   │   ├── index.js
+    │   │   │   └── styled.js
+    │   │   ├── Modal
+    │   │   │   ├── index.js
+    │   │   │   └── styled.js
+    │   │   ├── ProducrPreview
+    │   │   │   ├── index.js
+    │   │   │   └── styled.js
+    │   │   └── Products
+    │   │       ├── index.js
+    │   │       └── styled.js
+    │   ├── GlobalStyles
+    │   │   └── index.js
+    │   ├── images (a lot of images here)
+    │   ├── App.js
+    │   ├── fetchProducts.js
+    │   ├── index.js
+    │   ├── reportWebVitals.js
+    │   ├── package-lock.json
+    │   ├── package.json
+    │   └── README.MD
+    └── .gitignore  
+```
 
 ## Technologies and libraries:
  <ul>
