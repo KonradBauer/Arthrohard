@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { ReactComponent as Line } from "../../images/line.svg";
-import { ReactComponent as MainImageLeftVector } from "../../images/MainImageLeftVector.svg";
-import { ReactComponent as MainImageRightVector } from "../../images/MainImageRightVector.svg";
-import { ReactComponent as MainCenterLeftVector } from "../../images/MainCenterLeftVector.svg";
-import { ReactComponent as MainCenterRightVector } from "../../images/MainCenterRightVector.svg";
+import { ReactComponent as FlowerLeftVector } from "../../images/MainImageLeftVector.svg";
+import { ReactComponent as FlowerRightVector } from "../../images/MainImageRightVector.svg";
+import { ReactComponent as CenterLeftVector } from "../../images/MainCenterLeftVector.svg";
+import { ReactComponent as CenterRightVector } from "../../images/MainCenterRightVector.svg";
+import { ReactComponent as SyringeLeftVector } from "../../images/MainRightImageLeftVector.svg";
 
 export const SectionWrapper = styled.div`
   display: flex;
@@ -244,7 +245,7 @@ export const BulletWrapper = styled.img`
   margin-right: 20px;
 `;
 
-export const StyledMainImageLeftVector = styled(MainImageLeftVector)`
+export const StyledFlowerLeftVector = styled(FlowerLeftVector)`
   position: absolute;
   width: 50%;
   top: 143%;
@@ -257,7 +258,7 @@ export const StyledMainImageLeftVector = styled(MainImageLeftVector)`
   }
 `;
 
-export const StyledMainImageRightVector = styled(MainImageRightVector)`
+export const StyledFlowerRightVector = styled(FlowerRightVector)`
   position: absolute;
   width: 50%;
   top: 140%;
@@ -270,7 +271,7 @@ export const StyledMainImageRightVector = styled(MainImageRightVector)`
   }
 `;
 
-export const StyledMainCenterLeftVector = styled(MainCenterLeftVector)`
+export const StyledCenterLeftVector = styled(CenterLeftVector)`
   position: absolute;
   width: 50%;
   top: 142%;
@@ -283,11 +284,24 @@ export const StyledMainCenterLeftVector = styled(MainCenterLeftVector)`
   }
 `;
 
-export const StyledMainCenterRightVector = styled(MainCenterRightVector)`
+export const StyledCenterRightVector = styled(CenterRightVector)`
   position: absolute;
   width: 50%;
   top: 142%;
   right: 16.5%;
+  background-size: auto;
+  z-index: -1;
+
+  @media (max-width: 1800px) {
+    display: none;
+  }
+`;
+
+export const StyledSyringeLeftVector = styled(SyringeLeftVector)`
+  position: absolute;
+  width: 50%;
+  top: 142%;
+  right: 2%;
   background-size: auto;
   z-index: -1;
 

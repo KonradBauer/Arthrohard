@@ -11,8 +11,12 @@ import {
   ProductDescription,
   Right,
   SectionWrapper,
+  StyledCenterLeftVector,
+  StyledCenterRightVector,
+  StyledFlowerLeftVector,
+  StyledFlowerRightVector,
   StyledLine,
-  StyledMainImageLeftVector,
+  StyledSyringeLeftVector,
   SubHeader,
   Ul,
   UnderlineWrapper,
@@ -87,7 +91,11 @@ export const Main = () => {
           </UnderlineWrapper>
         </Right>
       </ProductDescription>
-      <StyledMainImageLeftVector />
+      <StyledFlowerLeftVector />
+      <StyledFlowerRightVector />
+      <StyledCenterLeftVector />
+      <StyledCenterRightVector />
+      <StyledSyringeLeftVector />
     </>
   );
 };
