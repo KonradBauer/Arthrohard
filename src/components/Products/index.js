@@ -20,25 +20,24 @@ export const GetProducts = () => {
   const [itemsPerPage, setItemsPerPage] = useState(20);
   const [shouldFetchData, setShouldFetchData] = useState(false);
 
+  const bottomOfPageRef = useRef(null);
+
   const { data, isLoading, isError, error, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {
       getNextPageParam: (lastPage) => {
         const nextPage = lastPage.pageNumber + 1;
         return nextPage <= Math.ceil(lastPage.totalItems / lastPage.pageSize) ? nextPage : null;
       },
+      enabled: shouldFetchData,
     });
-
-  const bottomOfPageRef = useRef({ clientHeight: 100 });
 
   useEffect(() => {
     const handleScroll = () => {
       const { innerHeight, scrollY } = window;
       const { scrollHeight } = document.documentElement;
 
-      if (innerHeight + scrollY >= scrollHeight - bottomOfPageRef.current.clientHeight) {
-        if (hasNextPage && !isFetchingNextPage) {
-          fetchNextPage();
-        }
+      if (innerHeight + scrollY >= scrollHeight - 10) {
+        setShouldFetchData(true);
       }
     };
 
@@ -47,7 +46,14 @@ export const GetProducts = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
+  }, []);
+
+  useEffect(() => {
+    if (shouldFetchData && hasNextPage && !isFetchingNextPage) {
+      fetchNextPage();
+      setShouldFetchData(false);
+    }
+  }, [shouldFetchData, hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   if (isLoading) {
     return (
@@ -68,7 +74,7 @@ export const GetProducts = () => {
         <Select
           id="itemsPerPage"
           name="itemsPerPage"
-          onChange={(event) => setItemsPerPage(event.target.value, 10)}
+          onChange={(event) => setItemsPerPage(event.target.value)}
           value={itemsPerPage}
         >
           <option value="10">10</option>
