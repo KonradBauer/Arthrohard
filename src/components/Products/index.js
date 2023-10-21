@@ -18,6 +18,7 @@ export const GetProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [itemsPerPage, setItemsPerPage] = useState(20);
+  const [shouldFetchData, setShouldFetchData] = useState(false);
 
   const { data, isLoading, isError, error, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {
@@ -49,7 +50,11 @@ export const GetProducts = () => {
   }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   if (isLoading) {
-    return;
+    return (
+      <StatusText>
+        <ClipLoader />
+      </StatusText>
+    );
   }
 
   if (isError) {
@@ -63,7 +68,7 @@ export const GetProducts = () => {
         <Select
           id="itemsPerPage"
           name="itemsPerPage"
-          onChange={(event) => setItemsPerPage(parseInt(event.target.value, 10))}
+          onChange={(event) => setItemsPerPage(event.target.value, 10)}
           value={itemsPerPage}
         >
           <option value="10">10</option>
