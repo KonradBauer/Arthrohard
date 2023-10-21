@@ -82,7 +82,7 @@ export const Tile = styled.button`
     height: 179px;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 390px) {
     width: 170px;
     height: 149px;
   }

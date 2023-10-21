@@ -1,4 +1,3 @@
-import { GlobalContainer } from "./GlobalStyles";
 import { Header } from "./components/Header";
 import { GetProducts } from "./components/Products";
 import { Main } from "./components/Main";
@@ -7,13 +6,13 @@ import { ProductPreview } from "./components/ProductPreview";
 
 function App() {
   return (
-    <GlobalContainer>
+    <>
       <Header />
       <ProductPreview />
       <Main />
       <Ingredients />
       <GetProducts />
-    </GlobalContainer>
+    </>
   );
 }
 

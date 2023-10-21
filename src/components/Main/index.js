@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BulletWrapper,
   Center,
@@ -99,3 +100,5 @@ export const Main = () => {
     </>
   );
 };
+
+export default Main;

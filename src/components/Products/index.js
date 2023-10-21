@@ -49,7 +49,7 @@ export const GetProducts = () => {
   }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   if (isLoading) {
-    return;
+    return null;
   }
 
   if (isError) {
