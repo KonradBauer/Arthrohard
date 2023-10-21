@@ -2,8 +2,8 @@ import React from "react";
 import { Content, Navigation, StyledLogo, StyledNavButtons } from "./styled";
 
 export const Header = () => {
-  const handleNavigation = (sectionId) => {
-    window.location.href = `#${sectionId}`;
+  const handleNavigation = (ID) => {
+    window.location.href = `#${ID}`;
   };
 
   return (

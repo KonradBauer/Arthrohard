@@ -56,11 +56,7 @@ export const GetProducts = () => {
   }, [shouldFetchData, hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   if (isLoading) {
-    return (
-      <StatusText>
-        <ClipLoader />
-      </StatusText>
-    );
+    return null;
   }
 
   if (isError) {
