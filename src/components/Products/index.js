@@ -19,7 +19,7 @@ export const GetProducts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [itemsPerPage, setItemsPerPage] = useState(20);
 
-  const { data, isLoading, error, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
+  const { data, isLoading, isError, error, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {
       getNextPageParam: (lastPage) => {
         const nextPage = lastPage.pageNumber + 1;
@@ -49,11 +49,7 @@ export const GetProducts = () => {
   }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   if (isLoading) {
-    return (
-      <StatusText>
-        <ClipLoader />
-      </StatusText>
-    );
+    return;
   }
 
   if (isError) {
