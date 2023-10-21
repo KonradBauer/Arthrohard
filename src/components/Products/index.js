@@ -8,18 +8,18 @@ import {
   SelectContainer,
   Tile,
   StatusText,
-  CustomRiseLoader,
   LoaderContainer,
   IDStyle,
 } from "./styled";
 import { Modal } from "../Modal";
+import { ClipLoader } from "react-spinners";
 
 export const GetProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [itemsPerPage, setItemsPerPage] = useState(20);
 
-  const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
+  const { data, isLoading, error, isError, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {
       getNextPageParam: (lastPage) => {
         const nextPage = lastPage.pageNumber + 1;
@@ -49,11 +49,15 @@ export const GetProducts = () => {
   }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
 
   if (isLoading) {
-    return null;
+    return (
+      <StatusText>
+        <ClipLoader />
+      </StatusText>
+    );
   }
 
   if (isError) {
-    return <StatusText>Error: {isError.message}</StatusText>;
+    return <StatusText>Error: {error.message}</StatusText>;
   }
 
   return (
@@ -92,7 +96,7 @@ export const GetProducts = () => {
         <StatusText>
           {isFetchingNextPage ? (
             <LoaderContainer>
-              <CustomRiseLoader color="#bebebe" smallScreen={window.innerWidth < 500} />
+              <ClipLoader />
             </LoaderContainer>
           ) : null}
         </StatusText>

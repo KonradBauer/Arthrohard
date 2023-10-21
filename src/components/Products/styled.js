@@ -1,4 +1,3 @@
-import { RiseLoader } from "react-spinners";
 import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
@@ -162,8 +161,4 @@ export const LoaderContainer = styled.div`
   align-items: flex-end;
   height: 100vh;
   margin-top: 20px;
-`;
-
-export const CustomRiseLoader = styled(RiseLoader)`
-  width: ${(props) => (props.smallScreen ? "25px" : "50px")};
 `;
