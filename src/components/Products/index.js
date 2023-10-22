@@ -66,13 +66,8 @@ export const GetProducts = () => {
   return (
     <div>
       <SelectContainer>
-        <Label htmlFor="itemsPerPage">liczba produktów na stronie:</Label>
-        <Select
-          id="itemsPerPage"
-          name="itemsPerPage"
-          onChange={(event) => setItemsPerPage(event.target.value)}
-          value={itemsPerPage}
-        >
+        <Label>liczba produktów na stronie:</Label>
+        <Select onChange={(event) => setItemsPerPage(event.target.value)} value={itemsPerPage}>
           <option value="10">10</option>
           <option value="20">20</option>
           <option value="30">30</option>
