@@ -295,7 +295,6 @@ export const ParallaxWrapper = styled.div`
   justify-content: center;
   height: 100%;
   perspective: 1000px;
-  overflow: hidden;
 
   @media (max-width: 868px) {
     img {
