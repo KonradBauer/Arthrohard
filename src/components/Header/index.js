@@ -20,7 +20,7 @@ export const Header = () => {
           Co nas wyróżnia
         </StyledNavButtons>
         <StyledNavButtons onClick={() => handleNavigation("ingredients")}>Skład</StyledNavButtons>
-        <StyledNavButtons onClick={() => checkComponentExist("ID")}>
+        <StyledNavButtons onClick={() => checkComponentExist()}>
           <strong>Produkty</strong>
         </StyledNavButtons>
       </Navigation>
