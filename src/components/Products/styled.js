@@ -114,6 +114,10 @@ export const SelectContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 120px;
+
+  @media (max-width: 470px) {
+    margin-top: 20px;
+  }
 `;
 
 export const Select = styled.select`
