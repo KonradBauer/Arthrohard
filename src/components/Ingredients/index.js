@@ -120,6 +120,7 @@ export const Ingredients = () => {
       </FlexContainer>
       <ParallaxWrapper onMouseMove={handleMouseMove}>
         <Parallax
+          id="parallax"
           src={dog}
           style={{
             transform: `translateX(${(mouseX - window.innerWidth / 2) / 20}px)`,
