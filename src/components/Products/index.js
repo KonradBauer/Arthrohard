@@ -36,7 +36,7 @@ export const GetProducts = () => {
       const { innerHeight, scrollY } = window;
       const { scrollHeight } = document.documentElement;
 
-      if (innerHeight + scrollY >= scrollHeight - 10) {
+      if (innerHeight + scrollY >= scrollHeight - 1) {
         setShouldFetchData(true);
       }
     };
