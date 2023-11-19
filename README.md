@@ -10,9 +10,12 @@
 
 ## Mobile view: 
 
-![example](https://github.com/KonradBauer/Arthrohard/blob/main/src/images/MobileView.gif?raw=true)
+<div align="center">
+  <img src="https://github.com/KonradBauer/Arthrohard/blob/main/src/images/MobileView.gif?raw=true" alt="example">
+</div>
 
 ## Files Structure
+
 ```
 └── root
     ├── public
