@@ -24,12 +24,16 @@ export const Modal = ({ isOpen, closeModal, product }) => {
     };
   }, [isOpen]);
 
-  if (!isOpen) {
+  if (!isOpen || !product) {
     return null;
   }
 
   const handleModalClose = () => {
     closeModal();
+  };
+
+  const randomProductValue = () => {
+    return Math.random().toFixed(3);
   };
 
   return (
@@ -41,8 +45,8 @@ export const Modal = ({ isOpen, closeModal, product }) => {
             <CloseButton onClick={handleModalClose}>✘</CloseButton>
           </FlexWrapper>
           <ContentWrapper>
-            <ProductName>Nazwa: {product.name}</ProductName>
-            <Value>Wartość: {product.value}</Value>
+            <ProductName>Autor: {product.author}</ProductName>
+            <Value>Wartość: {randomProductValue() * 100}</Value>
           </ContentWrapper>
         </ModalContent>
       </ModalContainer>
