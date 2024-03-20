@@ -18,26 +18,24 @@ export const GetProducts = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [itemsPerPage, setItemsPerPage] = useState(20);
-  const [shouldFetchData, setShouldFetchData] = useState(false);
-
   const bottomOfPageRef = useRef(null);
 
   const { data, isLoading, isError, error, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useInfiniteQuery(["products"], ({ pageParam = 1 }) => fetchProducts(pageParam, itemsPerPage), {
       getNextPageParam: (lastPage) => {
-        const nextPage = lastPage.pageNumber + 1;
-        return nextPage <= Math.ceil(lastPage.totalItems / lastPage.pageSize) ? nextPage : null;
+        const nextPage = lastPage.page + 1;
+        return nextPage;
       },
-      enabled: shouldFetchData,
+      enabled: true,
     });
 
   useEffect(() => {
     const handleScroll = () => {
-      const { innerHeight, scrollY } = window;
-      const { scrollHeight } = document.documentElement;
-
-      if (innerHeight + scrollY >= scrollHeight - 1) {
-        setShouldFetchData(true);
+      if (
+        bottomOfPageRef.current &&
+        bottomOfPageRef.current.getBoundingClientRect().bottom <= window.innerHeight
+      ) {
+        fetchNextPage();
       }
     };
 
@@ -46,14 +44,7 @@ export const GetProducts = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    if (shouldFetchData && hasNextPage && !isFetchingNextPage) {
-      fetchNextPage();
-      setShouldFetchData(false);
-    }
-  }, [shouldFetchData, hasNextPage, isFetchingNextPage, fetchNextPage]);
+  }, [fetchNextPage]);
 
   if (isLoading) {
     return null;
@@ -62,6 +53,13 @@ export const GetProducts = () => {
   if (isError) {
     return <StatusText>Error: {error.message}</StatusText>;
   }
+
+  const calculateId = (pageIndex, productIndex) => {
+    const totalLoadedProducts = data.pages
+      .slice(0, pageIndex)
+      .reduce((acc, page) => acc + page.length, 0);
+    return totalLoadedProducts + productIndex;
+  };
 
   return (
     <div>
@@ -77,7 +75,7 @@ export const GetProducts = () => {
       <ProductsContainer id="products">
         {data.pages.map((page, pageIndex) => (
           <React.Fragment key={pageIndex}>
-            {page.data.map((product) => (
+            {page.map((product, productIndex) => (
               <Tile
                 key={product.id}
                 onClick={() => {
@@ -85,12 +83,12 @@ export const GetProducts = () => {
                   setIsModalOpen(true);
                 }}
               >
-                <IDStyle>ID: {product.id}</IDStyle>
+                <IDStyle>ID: {calculateId(pageIndex, productIndex)}</IDStyle>
               </Tile>
             ))}
           </React.Fragment>
         ))}
-        {hasNextPage && <div ref={bottomOfPageRef} style={{ height: "10px" }}></div>}
+        {hasNextPage && <div ref={bottomOfPageRef}></div>}
         <StatusText>
           {isFetchingNextPage ? (
             <LoaderContainer>
